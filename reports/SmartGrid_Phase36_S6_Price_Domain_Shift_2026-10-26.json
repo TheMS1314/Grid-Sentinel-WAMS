@@ -1,0 +1,309 @@
+{
+  "training_only": "S0 chronological first 60%; threshold S0 next 20%",
+  "calibrated_center": 0.0086,
+  "calibrated_scale": 0.0362,
+  "calibrated_threshold": 1.801105,
+  "reports": [
+    {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 360,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "false_positive_rate": 0.0,
+      "scenario": "S0_benign_baseline",
+      "total_rows": 360,
+      "observed_price_rows": 360,
+      "observed_price_fraction": 1.0,
+      "min_observed_price": -0.0566,
+      "max_observed_price": -0.0274,
+      "benign_observed_price_rows": 360,
+      "benign_price_alert_rows": 0,
+      "attack_observed_price_rows": 0
+    },
+    {
+      "tp": 0,
+      "fp": 0,
+      "fn": 913,
+      "tn": 885,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_positive_rate": 0.0,
+      "scenario": "S1_industroyer_pv",
+      "total_rows": 1798,
+      "observed_price_rows": 1759,
+      "observed_price_fraction": 0.97831,
+      "min_observed_price": -0.0566,
+      "max_observed_price": 0.0564,
+      "benign_observed_price_rows": 846,
+      "benign_price_alert_rows": 0,
+      "attack_observed_price_rows": 913,
+      "first_attack_timestamp": "2026-03-06T10:55:27.510000+00:00",
+      "pre_attack_alert_rows": 0,
+      "post_attack_alert_rows": 0,
+      "pre_attack_observed_benign_rows": 346,
+      "post_attack_observed_benign_rows": 199,
+      "first_pre_attack_alert_seconds_ahead": null,
+      "per_attack_phase": {
+        "normal": {
+          "rows": 885,
+          "flagged": 0
+        },
+        "s1_reconnaissance_nmap_solar_power": {
+          "rows": 11,
+          "flagged": 0
+        },
+        "s1_industroyer_active_solar_power": {
+          "rows": 902,
+          "flagged": 0
+        }
+      }
+    },
+    {
+      "tp": 0,
+      "fp": 0,
+      "fn": 903,
+      "tn": 865,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_positive_rate": 0.0,
+      "scenario": "S2_industroyer_bss",
+      "total_rows": 1768,
+      "observed_price_rows": 1758,
+      "observed_price_fraction": 0.99434,
+      "min_observed_price": -0.0566,
+      "max_observed_price": 0.0564,
+      "benign_observed_price_rows": 855,
+      "benign_price_alert_rows": 0,
+      "attack_observed_price_rows": 903,
+      "first_attack_timestamp": "2026-03-05T15:10:29.030000+00:00",
+      "pre_attack_alert_rows": 0,
+      "post_attack_alert_rows": 0,
+      "pre_attack_observed_benign_rows": 347,
+      "post_attack_observed_benign_rows": 211,
+      "first_pre_attack_alert_seconds_ahead": null,
+      "per_attack_phase": {
+        "normal": {
+          "rows": 865,
+          "flagged": 0
+        },
+        "s2_reconnaissance_nmap_battery_storage": {
+          "rows": 2,
+          "flagged": 0
+        },
+        "s2_industroyer_active_battery_storage": {
+          "rows": 901,
+          "flagged": 0
+        }
+      }
+    },
+    {
+      "tp": 0,
+      "fp": 0,
+      "fn": 912,
+      "tn": 888,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_positive_rate": 0.0,
+      "scenario": "S3_arp_spoof_bss_meter_half_values",
+      "total_rows": 1800,
+      "observed_price_rows": 1794,
+      "observed_price_fraction": 0.99667,
+      "min_observed_price": -0.0566,
+      "max_observed_price": 0.0564,
+      "benign_observed_price_rows": 882,
+      "benign_price_alert_rows": 0,
+      "attack_observed_price_rows": 912,
+      "first_attack_timestamp": "2026-03-05T16:20:12.460000+00:00",
+      "pre_attack_alert_rows": 0,
+      "post_attack_alert_rows": 0,
+      "pre_attack_observed_benign_rows": 306,
+      "post_attack_observed_benign_rows": 300,
+      "first_pre_attack_alert_seconds_ahead": null,
+      "per_attack_phase": {
+        "normal": {
+          "rows": 888,
+          "flagged": 0
+        },
+        "reconnaissance": {
+          "rows": 1,
+          "flagged": 0
+        },
+        "impact": {
+          "rows": 911,
+          "flagged": 0
+        }
+      }
+    },
+    {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1257,
+      "tn": 541,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_positive_rate": 0.0,
+      "scenario": "S4_arp_spoof_loads_pv_two_phase",
+      "total_rows": 1798,
+      "observed_price_rows": 1758,
+      "observed_price_fraction": 0.97775,
+      "min_observed_price": 0.0564,
+      "max_observed_price": 0.0564,
+      "benign_observed_price_rows": 501,
+      "benign_price_alert_rows": 0,
+      "attack_observed_price_rows": 1257,
+      "first_attack_timestamp": "2026-03-06T15:18:47.440000+00:00",
+      "pre_attack_alert_rows": 0,
+      "post_attack_alert_rows": 0,
+      "pre_attack_observed_benign_rows": 305,
+      "post_attack_observed_benign_rows": 3,
+      "first_pre_attack_alert_seconds_ahead": null,
+      "per_attack_phase": {
+        "normal": {
+          "rows": 541,
+          "flagged": 0
+        },
+        "s4_reconnaissance_nmap_mitm": {
+          "rows": 10,
+          "flagged": 0
+        },
+        "s4_mitm_phase_1": {
+          "rows": 624,
+          "flagged": 0
+        },
+        "s4_mitm_phase_2": {
+          "rows": 623,
+          "flagged": 0
+        }
+      }
+    },
+    {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1341,
+      "tn": 459,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_positive_rate": 0.0,
+      "scenario": "S5_arp_spoof_loads_pv_bss_two_phase",
+      "total_rows": 1800,
+      "observed_price_rows": 1798,
+      "observed_price_fraction": 0.99889,
+      "min_observed_price": -0.0566,
+      "max_observed_price": 0.0564,
+      "benign_observed_price_rows": 457,
+      "benign_price_alert_rows": 0,
+      "attack_observed_price_rows": 1341,
+      "first_attack_timestamp": "2026-03-06T16:00:06.430000+00:00",
+      "pre_attack_alert_rows": 0,
+      "post_attack_alert_rows": 0,
+      "pre_attack_observed_benign_rows": 244,
+      "post_attack_observed_benign_rows": 0,
+      "first_pre_attack_alert_seconds_ahead": null,
+      "per_attack_phase": {
+        "normal": {
+          "rows": 459,
+          "flagged": 0
+        },
+        "s5_reconnaissance_nmap_mitm": {
+          "rows": 10,
+          "flagged": 0
+        },
+        "s5_mitm_phase_1": {
+          "rows": 749,
+          "flagged": 0
+        },
+        "s5_mitm_phase_2": {
+          "rows": 582,
+          "flagged": 0
+        }
+      }
+    },
+    {
+      "tp": 1350,
+      "fp": 12,
+      "fn": 0,
+      "tn": 438,
+      "precision": 0.99119,
+      "recall": 1.0,
+      "f1": 0.99558,
+      "false_positive_rate": 0.02667,
+      "scenario": "S6_mqtt_supply_chain_compromise",
+      "total_rows": 1800,
+      "observed_price_rows": 1362,
+      "observed_price_fraction": 0.75667,
+      "min_observed_price": 2.11764,
+      "max_observed_price": 2.30679,
+      "benign_observed_price_rows": 12,
+      "benign_price_alert_rows": 12,
+      "attack_observed_price_rows": 1350,
+      "first_attack_timestamp": "2026-03-06T13:55:18.690000+00:00",
+      "pre_attack_alert_rows": 0,
+      "post_attack_alert_rows": 12,
+      "pre_attack_observed_benign_rows": 0,
+      "post_attack_observed_benign_rows": 12,
+      "first_pre_attack_alert_seconds_ahead": null,
+      "per_attack_phase": {
+        "normal": {
+          "rows": 450,
+          "flagged": 12
+        },
+        "s6_attack_mqtt": {
+          "rows": 900,
+          "flagged": 900
+        },
+        "s6_mqtt_price_manipulation": {
+          "rows": 450,
+          "flagged": 450
+        }
+      }
+    },
+    {
+      "tp": 0,
+      "fp": 0,
+      "fn": 910,
+      "tn": 882,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_positive_rate": 0.0,
+      "scenario": "S1_industroyer_pv_alt",
+      "total_rows": 1792,
+      "observed_price_rows": 1782,
+      "observed_price_fraction": 0.99442,
+      "min_observed_price": -0.0566,
+      "max_observed_price": 0.0564,
+      "benign_observed_price_rows": 872,
+      "benign_price_alert_rows": 0,
+      "attack_observed_price_rows": 910,
+      "first_attack_timestamp": "2026-03-05T14:28:19.330000+00:00",
+      "pre_attack_alert_rows": 0,
+      "post_attack_alert_rows": 0,
+      "pre_attack_observed_benign_rows": 361,
+      "post_attack_observed_benign_rows": 160,
+      "first_pre_attack_alert_seconds_ahead": null,
+      "per_attack_phase": {
+        "normal": {
+          "rows": 882,
+          "flagged": 0
+        },
+        "s1_alt_reconnaissance_nmap_solar_power": {
+          "rows": 9,
+          "flagged": 0
+        },
+        "s1_alt_industroyer_active_solar_power": {
+          "rows": 901,
+          "flagged": 0
+        }
+      }
+    }
+  ],
+  "interpretation": "Price-regime novelty is NOT authenticated MQTT attack detection. Check cross-scenario clean false-alerts, post-attack residuals and missingness. Missing values abstain."
+}

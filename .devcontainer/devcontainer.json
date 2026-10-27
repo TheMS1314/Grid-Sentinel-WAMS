@@ -1,0 +1,17 @@
+{
+  "name": "Grid Sentinel private Docker lab",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "moby": true,
+      "dockerDashComposeVersion": "v2"
+    }
+  },
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {"label": "Grid Sentinel private dashboard", "onAutoForward": "notify"}
+  },
+  "postCreateCommand": "python -m pip install --user -r smartgrid_platform/requirements-preflight.txt",
+  "remoteUser": "vscode"
+}

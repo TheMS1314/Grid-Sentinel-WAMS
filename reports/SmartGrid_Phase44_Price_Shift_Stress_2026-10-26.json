@@ -1,0 +1,65 @@
+{
+  "status": "S0_BENIGN_SYNTHETIC_TARIFF_SHIFT_NEGATIVE_CONTROL",
+  "calibration_center_eur_per_kwh": 0.0086,
+  "calibration_scale_eur_per_kwh": 0.0362,
+  "calibration_threshold": 1.801105,
+  "price_holdout_start_index": 1438,
+  "price_holdout_seconds": 360,
+  "results": [
+    {
+      "additive_shift_eur_per_kwh": -0.1,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 360,
+      "benign_false_review_fraction": 1.0
+    },
+    {
+      "additive_shift_eur_per_kwh": -0.05,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 360,
+      "benign_false_review_fraction": 1.0
+    },
+    {
+      "additive_shift_eur_per_kwh": -0.02,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 340,
+      "benign_false_review_fraction": 0.944444
+    },
+    {
+      "additive_shift_eur_per_kwh": -0.01,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 340,
+      "benign_false_review_fraction": 0.944444
+    },
+    {
+      "additive_shift_eur_per_kwh": 0.0,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 0,
+      "benign_false_review_fraction": 0.0
+    },
+    {
+      "additive_shift_eur_per_kwh": 0.01,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 0,
+      "benign_false_review_fraction": 0.0
+    },
+    {
+      "additive_shift_eur_per_kwh": 0.02,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 0,
+      "benign_false_review_fraction": 0.0
+    },
+    {
+      "additive_shift_eur_per_kwh": 0.05,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 0,
+      "benign_false_review_fraction": 0.0
+    },
+    {
+      "additive_shift_eur_per_kwh": 0.1,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 0,
+      "benign_false_review_fraction": 0.0
+    }
+  ],
+  "warning": "Same topology and previously examined public S0. Artificial price offsets probe fragility only, not new attack detection, independent validation, or real-world prevalence."
+}

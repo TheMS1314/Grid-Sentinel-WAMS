@@ -1,0 +1,956 @@
+{
+  "dataset": "Zenodo 8375657 (Elrawy et al., 2023)",
+  "design": "exploratory leave-one-workbook-out, no row-random splits; fixed RF(300, min_samples_leaf=5, class_weight=balanced, seed=42)",
+  "scopes": {
+    "real_modbus": {
+      "arp_indicator_only": {
+        "attack_workbook_macro_f1": 0.814134,
+        "folds": [
+          {
+            "attacks": 0,
+            "f1": 0.0,
+            "fn": 0,
+            "fp": 0,
+            "held_out": "A",
+            "normal": 706,
+            "precision": 0.0,
+            "recall": 0.0,
+            "tn": 706,
+            "tp": 0
+          },
+          {
+            "attacks": 242,
+            "f1": 0.810811,
+            "fn": 77,
+            "fp": 0,
+            "held_out": "B",
+            "normal": 455,
+            "precision": 1.0,
+            "recall": 0.681818,
+            "tn": 455,
+            "tp": 165
+          },
+          {
+            "attacks": 249,
+            "f1": 0.805755,
+            "fn": 81,
+            "fp": 0,
+            "held_out": "C",
+            "normal": 451,
+            "precision": 1.0,
+            "recall": 0.674699,
+            "tn": 451,
+            "tp": 168
+          },
+          {
+            "attacks": 84,
+            "f1": 0.808511,
+            "fn": 27,
+            "fp": 0,
+            "held_out": "D",
+            "normal": 621,
+            "precision": 1.0,
+            "recall": 0.678571,
+            "tn": 621,
+            "tp": 57
+          },
+          {
+            "attacks": 489,
+            "f1": 0.824519,
+            "fn": 146,
+            "fp": 0,
+            "held_out": "E",
+            "normal": 203,
+            "precision": 1.0,
+            "recall": 0.701431,
+            "tn": 203,
+            "tp": 343
+          },
+          {
+            "attacks": 83,
+            "f1": 0.822695,
+            "fn": 25,
+            "fp": 0,
+            "held_out": "F",
+            "normal": 618,
+            "precision": 1.0,
+            "recall": 0.698795,
+            "tn": 618,
+            "tp": 58
+          },
+          {
+            "attacks": 502,
+            "f1": 0.807601,
+            "fn": 162,
+            "fp": 0,
+            "held_out": "G",
+            "normal": 188,
+            "precision": 1.0,
+            "recall": 0.677291,
+            "tn": 188,
+            "tp": 340
+          },
+          {
+            "attacks": 496,
+            "f1": 0.819048,
+            "fn": 152,
+            "fp": 0,
+            "held_out": "H",
+            "normal": 196,
+            "precision": 1.0,
+            "recall": 0.693548,
+            "tn": 196,
+            "tp": 344
+          }
+        ],
+        "pooled": {
+          "f1": 0.814917,
+          "fn": 670,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.687646,
+          "tn": 3438,
+          "tp": 1475
+        }
+      },
+      "flow_features_only": {
+        "attack_workbook_macro_f1": 0.986396,
+        "folds": [
+          {
+            "attacks": 0,
+            "f1": 0.0,
+            "fn": 0,
+            "fp": 0,
+            "held_out": "A",
+            "normal": 706,
+            "precision": 0.0,
+            "recall": 0.0,
+            "tn": 706,
+            "tp": 0
+          },
+          {
+            "attacks": 242,
+            "f1": 0.991803,
+            "fn": 0,
+            "fp": 4,
+            "held_out": "B",
+            "normal": 455,
+            "precision": 0.98374,
+            "recall": 1.0,
+            "tn": 451,
+            "tp": 242
+          },
+          {
+            "attacks": 249,
+            "f1": 0.997988,
+            "fn": 1,
+            "fp": 0,
+            "held_out": "C",
+            "normal": 451,
+            "precision": 1.0,
+            "recall": 0.995984,
+            "tn": 451,
+            "tp": 248
+          },
+          {
+            "attacks": 84,
+            "f1": 0.987952,
+            "fn": 2,
+            "fp": 0,
+            "held_out": "D",
+            "normal": 621,
+            "precision": 1.0,
+            "recall": 0.97619,
+            "tn": 621,
+            "tp": 82
+          },
+          {
+            "attacks": 489,
+            "f1": 0.994872,
+            "fn": 4,
+            "fp": 1,
+            "held_out": "E",
+            "normal": 203,
+            "precision": 0.997942,
+            "recall": 0.99182,
+            "tn": 202,
+            "tp": 485
+          },
+          {
+            "attacks": 83,
+            "f1": 0.937143,
+            "fn": 1,
+            "fp": 10,
+            "held_out": "F",
+            "normal": 618,
+            "precision": 0.891304,
+            "recall": 0.987952,
+            "tn": 608,
+            "tp": 82
+          },
+          {
+            "attacks": 502,
+            "f1": 0.996024,
+            "fn": 1,
+            "fp": 3,
+            "held_out": "G",
+            "normal": 188,
+            "precision": 0.994048,
+            "recall": 0.998008,
+            "tn": 185,
+            "tp": 501
+          },
+          {
+            "attacks": 496,
+            "f1": 0.998991,
+            "fn": 1,
+            "fp": 0,
+            "held_out": "H",
+            "normal": 196,
+            "precision": 1.0,
+            "recall": 0.997984,
+            "tn": 196,
+            "tp": 495
+          }
+        ],
+        "pooled": {
+          "f1": 0.993485,
+          "fn": 10,
+          "fp": 18,
+          "precision": 0.99164,
+          "recall": 0.995338,
+          "tn": 3420,
+          "tp": 2135
+        }
+      },
+      "flow_plus_arp": {
+        "attack_workbook_macro_f1": 0.98903,
+        "folds": [
+          {
+            "attacks": 0,
+            "f1": 0.0,
+            "fn": 0,
+            "fp": 0,
+            "held_out": "A",
+            "normal": 706,
+            "precision": 0.0,
+            "recall": 0.0,
+            "tn": 706,
+            "tp": 0
+          },
+          {
+            "attacks": 242,
+            "f1": 0.991803,
+            "fn": 0,
+            "fp": 4,
+            "held_out": "B",
+            "normal": 455,
+            "precision": 0.98374,
+            "recall": 1.0,
+            "tn": 451,
+            "tp": 242
+          },
+          {
+            "attacks": 249,
+            "f1": 0.997988,
+            "fn": 1,
+            "fp": 0,
+            "held_out": "C",
+            "normal": 451,
+            "precision": 1.0,
+            "recall": 0.995984,
+            "tn": 451,
+            "tp": 248
+          },
+          {
+            "attacks": 84,
+            "f1": 0.994012,
+            "fn": 1,
+            "fp": 0,
+            "held_out": "D",
+            "normal": 621,
+            "precision": 1.0,
+            "recall": 0.988095,
+            "tn": 621,
+            "tp": 83
+          },
+          {
+            "attacks": 489,
+            "f1": 0.99384,
+            "fn": 5,
+            "fp": 1,
+            "held_out": "E",
+            "normal": 203,
+            "precision": 0.997938,
+            "recall": 0.989775,
+            "tn": 202,
+            "tp": 484
+          },
+          {
+            "attacks": 83,
+            "f1": 0.948571,
+            "fn": 0,
+            "fp": 9,
+            "held_out": "F",
+            "normal": 618,
+            "precision": 0.902174,
+            "recall": 1.0,
+            "tn": 609,
+            "tp": 83
+          },
+          {
+            "attacks": 502,
+            "f1": 0.998008,
+            "fn": 1,
+            "fp": 1,
+            "held_out": "G",
+            "normal": 188,
+            "precision": 0.998008,
+            "recall": 0.998008,
+            "tn": 187,
+            "tp": 501
+          },
+          {
+            "attacks": 496,
+            "f1": 0.998991,
+            "fn": 1,
+            "fp": 0,
+            "held_out": "H",
+            "normal": 196,
+            "precision": 1.0,
+            "recall": 0.997984,
+            "tn": 196,
+            "tp": 495
+          }
+        ],
+        "pooled": {
+          "f1": 0.994413,
+          "fn": 9,
+          "fp": 15,
+          "precision": 0.993026,
+          "recall": 0.995804,
+          "tn": 3423,
+          "tp": 2136
+        }
+      }
+    },
+    "sim_mms": {
+      "arp_indicator_only": {
+        "attack_workbook_macro_f1": 0.563248,
+        "folds": [
+          {
+            "attacks": 0,
+            "f1": 0.0,
+            "fn": 0,
+            "fp": 0,
+            "held_out": "D1",
+            "normal": 701,
+            "precision": 0.0,
+            "recall": 0.0,
+            "tn": 701,
+            "tp": 0
+          },
+          {
+            "attacks": 137,
+            "f1": 0.848739,
+            "fn": 36,
+            "fp": 0,
+            "held_out": "D2",
+            "normal": 564,
+            "precision": 1.0,
+            "recall": 0.737226,
+            "tn": 564,
+            "tp": 101
+          },
+          {
+            "attacks": 277,
+            "f1": 0.841004,
+            "fn": 76,
+            "fp": 0,
+            "held_out": "D3",
+            "normal": 424,
+            "precision": 1.0,
+            "recall": 0.725632,
+            "tn": 424,
+            "tp": 201
+          },
+          {
+            "attacks": 299,
+            "f1": 0.0,
+            "fn": 299,
+            "fp": 0,
+            "held_out": "D4",
+            "normal": 402,
+            "precision": 0.0,
+            "recall": 0.0,
+            "tn": 402,
+            "tp": 0
+          }
+        ],
+        "pooled": {
+          "f1": 0.595074,
+          "fn": 411,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.423562,
+          "tn": 2091,
+          "tp": 302
+        }
+      },
+      "flow_features_only": {
+        "attack_workbook_macro_f1": 0.979934,
+        "folds": [
+          {
+            "attacks": 0,
+            "f1": 0.0,
+            "fn": 0,
+            "fp": 0,
+            "held_out": "D1",
+            "normal": 701,
+            "precision": 0.0,
+            "recall": 0.0,
+            "tn": 701,
+            "tp": 0
+          },
+          {
+            "attacks": 137,
+            "f1": 0.975089,
+            "fn": 0,
+            "fp": 7,
+            "held_out": "D2",
+            "normal": 564,
+            "precision": 0.951389,
+            "recall": 1.0,
+            "tn": 557,
+            "tp": 137
+          },
+          {
+            "attacks": 277,
+            "f1": 0.976321,
+            "fn": 9,
+            "fp": 4,
+            "held_out": "D3",
+            "normal": 424,
+            "precision": 0.985294,
+            "recall": 0.967509,
+            "tn": 420,
+            "tp": 268
+          },
+          {
+            "attacks": 299,
+            "f1": 0.988391,
+            "fn": 1,
+            "fp": 6,
+            "held_out": "D4",
+            "normal": 402,
+            "precision": 0.980263,
+            "recall": 0.996656,
+            "tn": 396,
+            "tp": 298
+          }
+        ],
+        "pooled": {
+          "f1": 0.981158,
+          "fn": 10,
+          "fp": 17,
+          "precision": 0.976389,
+          "recall": 0.985975,
+          "tn": 2074,
+          "tp": 703
+        }
+      },
+      "flow_plus_arp": {
+        "attack_workbook_macro_f1": 0.982884,
+        "folds": [
+          {
+            "attacks": 0,
+            "f1": 0.0,
+            "fn": 0,
+            "fp": 0,
+            "held_out": "D1",
+            "normal": 701,
+            "precision": 0.0,
+            "recall": 0.0,
+            "tn": 701,
+            "tp": 0
+          },
+          {
+            "attacks": 137,
+            "f1": 0.982079,
+            "fn": 0,
+            "fp": 5,
+            "held_out": "D2",
+            "normal": 564,
+            "precision": 0.964789,
+            "recall": 1.0,
+            "tn": 559,
+            "tp": 137
+          },
+          {
+            "attacks": 277,
+            "f1": 0.978182,
+            "fn": 8,
+            "fp": 4,
+            "held_out": "D3",
+            "normal": 424,
+            "precision": 0.985348,
+            "recall": 0.971119,
+            "tn": 420,
+            "tp": 269
+          },
+          {
+            "attacks": 299,
+            "f1": 0.988391,
+            "fn": 1,
+            "fp": 6,
+            "held_out": "D4",
+            "normal": 402,
+            "precision": 0.980263,
+            "recall": 0.996656,
+            "tn": 396,
+            "tp": 298
+          }
+        ],
+        "pooled": {
+          "f1": 0.98324,
+          "fn": 9,
+          "fp": 15,
+          "precision": 0.979138,
+          "recall": 0.987377,
+          "tn": 2076,
+          "tp": 704
+        }
+      }
+    },
+    "sim_modbus": {
+      "arp_indicator_only": {
+        "attack_workbook_macro_f1": 0.562011,
+        "folds": [
+          {
+            "attacks": 0,
+            "f1": 0.0,
+            "fn": 0,
+            "fp": 0,
+            "held_out": "D5",
+            "normal": 700,
+            "precision": 0.0,
+            "recall": 0.0,
+            "tn": 700,
+            "tp": 0
+          },
+          {
+            "attacks": 136,
+            "f1": 0.847458,
+            "fn": 36,
+            "fp": 0,
+            "held_out": "D6",
+            "normal": 564,
+            "precision": 1.0,
+            "recall": 0.735294,
+            "tn": 564,
+            "tp": 100
+          },
+          {
+            "attacks": 277,
+            "f1": 0.838574,
+            "fn": 77,
+            "fp": 0,
+            "held_out": "D7",
+            "normal": 423,
+            "precision": 1.0,
+            "recall": 0.722022,
+            "tn": 423,
+            "tp": 200
+          },
+          {
+            "attacks": 299,
+            "f1": 0.0,
+            "fn": 299,
+            "fp": 0,
+            "held_out": "D8",
+            "normal": 402,
+            "precision": 0.0,
+            "recall": 0.0,
+            "tn": 402,
+            "tp": 0
+          }
+        ],
+        "pooled": {
+          "f1": 0.592885,
+          "fn": 412,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.421348,
+          "tn": 2089,
+          "tp": 300
+        }
+      },
+      "flow_features_only": {
+        "attack_workbook_macro_f1": 0.959078,
+        "folds": [
+          {
+            "attacks": 0,
+            "f1": 0.0,
+            "fn": 0,
+            "fp": 1,
+            "held_out": "D5",
+            "normal": 700,
+            "precision": 0.0,
+            "recall": 0.0,
+            "tn": 699,
+            "tp": 0
+          },
+          {
+            "attacks": 136,
+            "f1": 0.981949,
+            "fn": 0,
+            "fp": 5,
+            "held_out": "D6",
+            "normal": 564,
+            "precision": 0.964539,
+            "recall": 1.0,
+            "tn": 559,
+            "tp": 136
+          },
+          {
+            "attacks": 277,
+            "f1": 0.947368,
+            "fn": 25,
+            "fp": 3,
+            "held_out": "D7",
+            "normal": 423,
+            "precision": 0.988235,
+            "recall": 0.909747,
+            "tn": 420,
+            "tp": 252
+          },
+          {
+            "attacks": 299,
+            "f1": 0.947917,
+            "fn": 26,
+            "fp": 4,
+            "held_out": "D8",
+            "normal": 402,
+            "precision": 0.98556,
+            "recall": 0.913043,
+            "tn": 398,
+            "tp": 273
+          }
+        ],
+        "pooled": {
+          "f1": 0.953824,
+          "fn": 51,
+          "fp": 13,
+          "precision": 0.980712,
+          "recall": 0.928371,
+          "tn": 2076,
+          "tp": 661
+        }
+      },
+      "flow_plus_arp": {
+        "attack_workbook_macro_f1": 0.961735,
+        "folds": [
+          {
+            "attacks": 0,
+            "f1": 0.0,
+            "fn": 0,
+            "fp": 1,
+            "held_out": "D5",
+            "normal": 700,
+            "precision": 0.0,
+            "recall": 0.0,
+            "tn": 699,
+            "tp": 0
+          },
+          {
+            "attacks": 136,
+            "f1": 0.981949,
+            "fn": 0,
+            "fp": 5,
+            "held_out": "D6",
+            "normal": 564,
+            "precision": 0.964539,
+            "recall": 1.0,
+            "tn": 559,
+            "tp": 136
+          },
+          {
+            "attacks": 277,
+            "f1": 0.957169,
+            "fn": 20,
+            "fp": 3,
+            "held_out": "D7",
+            "normal": 423,
+            "precision": 0.988462,
+            "recall": 0.927798,
+            "tn": 420,
+            "tp": 257
+          },
+          {
+            "attacks": 299,
+            "f1": 0.946087,
+            "fn": 27,
+            "fp": 4,
+            "held_out": "D8",
+            "normal": 402,
+            "precision": 0.985507,
+            "recall": 0.909699,
+            "tn": 398,
+            "tp": 272
+          }
+        ],
+        "pooled": {
+          "f1": 0.956835,
+          "fn": 47,
+          "fp": 13,
+          "precision": 0.980826,
+          "recall": 0.933989,
+          "tn": 2076,
+          "tp": 665
+        }
+      }
+    }
+  },
+  "source_md5": "8ceb392f6a69086635159ff5bd0fff17",
+  "warning": "New external flow-feature baseline; NOT evaluation of frozen Data4Cyber four-lane Grid Sentinel model. Post-hoc inspection makes model comparisons exploratory.",
+  "workbooks": {
+    "A": {
+      "arp_indicator_counts": {
+        "0": 706
+      },
+      "exact_duplicate_rows": 0,
+      "label_counts": {
+        "1": 706
+      },
+      "missing_cells": 0,
+      "rows": 706,
+      "scope": "real_modbus"
+    },
+    "B": {
+      "arp_indicator_counts": {
+        "0": 532,
+        "1": 165
+      },
+      "exact_duplicate_rows": 2,
+      "label_counts": {
+        "1": 455,
+        "1000": 77,
+        "2000": 81,
+        "500": 84
+      },
+      "missing_cells": 0,
+      "rows": 697,
+      "scope": "real_modbus"
+    },
+    "C": {
+      "arp_indicator_counts": {
+        "0": 532,
+        "1": 168
+      },
+      "exact_duplicate_rows": 0,
+      "label_counts": {
+        "1": 451,
+        "1000": 81,
+        "2000": 82,
+        "500": 86
+      },
+      "missing_cells": 0,
+      "rows": 700,
+      "scope": "real_modbus"
+    },
+    "D": {
+      "arp_indicator_counts": {
+        "0": 648,
+        "1": 57
+      },
+      "exact_duplicate_rows": 0,
+      "label_counts": {
+        "1": 621,
+        "1000": 27,
+        "2000": 29,
+        "500": 28
+      },
+      "missing_cells": 0,
+      "rows": 705,
+      "scope": "real_modbus"
+    },
+    "D1": {
+      "arp_indicator_counts": {
+        "0": 701
+      },
+      "exact_duplicate_rows": 0,
+      "label_counts": {
+        "1": 701
+      },
+      "missing_cells": 0,
+      "rows": 701,
+      "scope": "sim_mms"
+    },
+    "D2": {
+      "arp_indicator_counts": {
+        "0": 600,
+        "1": 101
+      },
+      "exact_duplicate_rows": 0,
+      "label_counts": {
+        "1": 564,
+        "1000": 36,
+        "2000": 50,
+        "500": 51
+      },
+      "missing_cells": 0,
+      "rows": 701,
+      "scope": "sim_mms"
+    },
+    "D3": {
+      "arp_indicator_counts": {
+        "0": 500,
+        "1": 201
+      },
+      "exact_duplicate_rows": 0,
+      "label_counts": {
+        "1": 424,
+        "1000": 76,
+        "2000": 100,
+        "500": 101
+      },
+      "missing_cells": 0,
+      "rows": 701,
+      "scope": "sim_mms"
+    },
+    "D4": {
+      "arp_indicator_counts": {
+        "0": 701
+      },
+      "exact_duplicate_rows": 0,
+      "label_counts": {
+        "1": 402,
+        "50": 299
+      },
+      "missing_cells": 0,
+      "rows": 701,
+      "scope": "sim_mms"
+    },
+    "D5": {
+      "arp_indicator_counts": {
+        "0": 700
+      },
+      "exact_duplicate_rows": 0,
+      "label_counts": {
+        "1": 700
+      },
+      "missing_cells": 0,
+      "rows": 700,
+      "scope": "sim_modbus"
+    },
+    "D6": {
+      "arp_indicator_counts": {
+        "0": 600,
+        "1": 100
+      },
+      "exact_duplicate_rows": 0,
+      "label_counts": {
+        "1": 564,
+        "1000": 36,
+        "2000": 50,
+        "500": 50
+      },
+      "missing_cells": 0,
+      "rows": 700,
+      "scope": "sim_modbus"
+    },
+    "D7": {
+      "arp_indicator_counts": {
+        "0": 500,
+        "1": 200
+      },
+      "exact_duplicate_rows": 0,
+      "label_counts": {
+        "1": 423,
+        "1000": 77,
+        "2000": 100,
+        "500": 100
+      },
+      "missing_cells": 0,
+      "rows": 700,
+      "scope": "sim_modbus"
+    },
+    "D8": {
+      "arp_indicator_counts": {
+        "0": 701
+      },
+      "exact_duplicate_rows": 0,
+      "label_counts": {
+        "1": 402,
+        "50": 299
+      },
+      "missing_cells": 4,
+      "rows": 701,
+      "scope": "sim_modbus"
+    },
+    "E": {
+      "arp_indicator_counts": {
+        "0": 349,
+        "1": 343
+      },
+      "exact_duplicate_rows": 0,
+      "label_counts": {
+        "1": 203,
+        "1000": 146,
+        "2000": 172,
+        "500": 171
+      },
+      "missing_cells": 0,
+      "rows": 692,
+      "scope": "real_modbus"
+    },
+    "F": {
+      "arp_indicator_counts": {
+        "0": 643,
+        "1": 58
+      },
+      "exact_duplicate_rows": 0,
+      "label_counts": {
+        "1": 618,
+        "1000": 25,
+        "2000": 30,
+        "500": 28
+      },
+      "missing_cells": 0,
+      "rows": 701,
+      "scope": "real_modbus"
+    },
+    "G": {
+      "arp_indicator_counts": {
+        "0": 350,
+        "1": 340
+      },
+      "exact_duplicate_rows": 0,
+      "label_counts": {
+        "1": 188,
+        "1000": 162,
+        "2000": 172,
+        "500": 168
+      },
+      "missing_cells": 0,
+      "rows": 690,
+      "scope": "real_modbus"
+    },
+    "H": {
+      "arp_indicator_counts": {
+        "0": 348,
+        "1": 344
+      },
+      "exact_duplicate_rows": 0,
+      "label_counts": {
+        "1": 196,
+        "1000": 152,
+        "2000": 171,
+        "500": 173
+      },
+      "missing_cells": 0,
+      "rows": 692,
+      "scope": "real_modbus"
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "input_sha256": {
+    "phase54": "aabd62f5532bca767b9828266736369c1acfda360aeac2235f007235bf5f6d72",
+    "phase55": "4240b38385a01e068993ef763c020cd1dac4c70d346453533ae2b1b5926518c2"
+  },
+  "results": [
+    {
+      "baseline_capture": 3,
+      "decision_if_benign_device_change": "normal",
+      "hypothetical_new_source_mac_frames": 0,
+      "simulated_total_frames": 126492,
+      "simulated_unknown_source_mac_frames": 3,
+      "vantage": "central_switch"
+    },
+    {
+      "baseline_capture": 3,
+      "decision_if_benign_device_change": "normal",
+      "hypothetical_new_source_mac_frames": 1,
+      "simulated_total_frames": 126493,
+      "simulated_unknown_source_mac_frames": 4,
+      "vantage": "central_switch"
+    },
+    {
+      "baseline_capture": 3,
+      "decision_if_benign_device_change": "normal",
+      "hypothetical_new_source_mac_frames": 5,
+      "simulated_total_frames": 126497,
+      "simulated_unknown_source_mac_frames": 8,
+      "vantage": "central_switch"
+    },
+    {
+      "baseline_capture": 3,
+      "decision_if_benign_device_change": "attack",
+      "hypothetical_new_source_mac_frames": 10,
+      "simulated_total_frames": 126502,
+      "simulated_unknown_source_mac_frames": 13,
+      "vantage": "central_switch"
+    },
+    {
+      "baseline_capture": 3,
+      "decision_if_benign_device_change": "attack",
+      "hypothetical_new_source_mac_frames": 50,
+      "simulated_total_frames": 126542,
+      "simulated_unknown_source_mac_frames": 53,
+      "vantage": "central_switch"
+    },
+    {
+      "baseline_capture": 3,
+      "decision_if_benign_device_change": "attack",
+      "hypothetical_new_source_mac_frames": 100,
+      "simulated_total_frames": 126592,
+      "simulated_unknown_source_mac_frames": 103,
+      "vantage": "central_switch"
+    },
+    {
+      "baseline_capture": 3,
+      "decision_if_benign_device_change": "attack",
+      "hypothetical_new_source_mac_frames": 1000,
+      "simulated_total_frames": 127492,
+      "simulated_unknown_source_mac_frames": 1003,
+      "vantage": "central_switch"
+    },
+    {
+      "baseline_capture": 71,
+      "decision_if_benign_device_change": "normal",
+      "hypothetical_new_source_mac_frames": 0,
+      "simulated_total_frames": 12147,
+      "simulated_unknown_source_mac_frames": 0,
+      "vantage": "plc_port"
+    },
+    {
+      "baseline_capture": 71,
+      "decision_if_benign_device_change": "normal",
+      "hypothetical_new_source_mac_frames": 1,
+      "simulated_total_frames": 12148,
+      "simulated_unknown_source_mac_frames": 1,
+      "vantage": "plc_port"
+    },
+    {
+      "baseline_capture": 71,
+      "decision_if_benign_device_change": "attack",
+      "hypothetical_new_source_mac_frames": 5,
+      "simulated_total_frames": 12152,
+      "simulated_unknown_source_mac_frames": 5,
+      "vantage": "plc_port"
+    },
+    {
+      "baseline_capture": 71,
+      "decision_if_benign_device_change": "attack",
+      "hypothetical_new_source_mac_frames": 10,
+      "simulated_total_frames": 12157,
+      "simulated_unknown_source_mac_frames": 10,
+      "vantage": "plc_port"
+    },
+    {
+      "baseline_capture": 71,
+      "decision_if_benign_device_change": "attack",
+      "hypothetical_new_source_mac_frames": 50,
+      "simulated_total_frames": 12197,
+      "simulated_unknown_source_mac_frames": 50,
+      "vantage": "plc_port"
+    },
+    {
+      "baseline_capture": 71,
+      "decision_if_benign_device_change": "attack",
+      "hypothetical_new_source_mac_frames": 100,
+      "simulated_total_frames": 12247,
+      "simulated_unknown_source_mac_frames": 100,
+      "vantage": "plc_port"
+    },
+    {
+      "baseline_capture": 71,
+      "decision_if_benign_device_change": "attack",
+      "hypothetical_new_source_mac_frames": 1000,
+      "simulated_total_frames": 13147,
+      "simulated_unknown_source_mac_frames": 1000,
+      "vantage": "plc_port"
+    }
+  ],
+  "source": "Phase54 observed benign counts and Phase55 benign-only per-vantage rate thresholds",
+  "synthetic_false_alert_counts": {
+    "0": 0,
+    "1": 0,
+    "10": 2,
+    "100": 2,
+    "1000": 2,
+    "5": 1,
+    "50": 2
+  },
+  "warning": "SYNTHETIC COUNTERFACTUAL based on real benign count denominators; no maintenance event was observed or relabeled. An attacker can impersonate an allowed MAC; this lane alone cannot authenticate device identity."
+}

@@ -1,0 +1,9 @@
+smartgrid_platform/.env
+smartgrid_platform/backups/
+smartgrid_platform/.local/
+**/.venv/
+**/node_modules/
+**/dist/
+**/__pycache__/
+**/.pytest_cache/
+*.pyc

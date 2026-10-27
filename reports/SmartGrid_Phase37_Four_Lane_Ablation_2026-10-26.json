@@ -1,0 +1,1004 @@
+{
+  "research_status": "EXPLORATORY_POSTHOC_NOT_DEPLOYED",
+  "calibration": {
+    "price_S0_first_60_percent": true,
+    "price_threshold_S0_next_20_percent": true,
+    "physics_model_frozen": true,
+    "modbus_source_hold_seconds": 5,
+    "arp_claim_hold_seconds": 2
+  },
+  "macro_F1_S1_through_S6": 0.98943,
+  "leave_one_lane_out_macro": {
+    "physics": {
+      "macro_f1_without_lane": 0.98945,
+      "exclusive_attack_rows_across_S1_S6": 35,
+      "exclusive_benign_alert_rows_across_S1_S6": 28
+    },
+    "modbus_source_hold5": {
+      "macro_f1_without_lane": 0.6677,
+      "exclusive_attack_rows_across_S1_S6": 1772,
+      "exclusive_benign_alert_rows_across_S1_S6": 21
+    },
+    "arp_claim_hold2": {
+      "macro_f1_without_lane": 0.88202,
+      "exclusive_attack_rows_across_S1_S6": 1024,
+      "exclusive_benign_alert_rows_across_S1_S6": 8
+    },
+    "price_domain": {
+      "macro_f1_without_lane": 0.83355,
+      "exclusive_attack_rows_across_S1_S6": 1308,
+      "exclusive_benign_alert_rows_across_S1_S6": 12
+    }
+  },
+  "warning": "Macro F1 reuses previously examined attack scenarios and after-the-fact lane/persistence choices. No site-transfer or blind-test claim.",
+  "scenarios": [
+    {
+      "scenario": "S0_benign_baseline",
+      "rows": 360,
+      "physics": {
+        "tp": 0,
+        "fp": 4,
+        "fn": 0,
+        "tn": 356,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.01111
+      },
+      "modbus_source_hold5": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 360,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.0
+      },
+      "arp_claim_hold2": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 360,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.0
+      },
+      "price_domain": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 360,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.0
+      },
+      "four_lane_or": {
+        "tp": 0,
+        "fp": 4,
+        "fn": 0,
+        "tn": 356,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.01111
+      },
+      "leave_one_lane_out": {
+        "physics": {
+          "without_lane": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 360,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "clean_fpr": 0.0
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 4
+        },
+        "modbus_source_hold5": {
+          "without_lane": {
+            "tp": 0,
+            "fp": 4,
+            "fn": 0,
+            "tn": 356,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "clean_fpr": 0.01111
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        },
+        "arp_claim_hold2": {
+          "without_lane": {
+            "tp": 0,
+            "fp": 4,
+            "fn": 0,
+            "tn": 356,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "clean_fpr": 0.01111
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        },
+        "price_domain": {
+          "without_lane": {
+            "tp": 0,
+            "fp": 4,
+            "fn": 0,
+            "tn": 356,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "clean_fpr": 0.01111
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        }
+      },
+      "clean_alert_episodes": {
+        "episodes": 2,
+        "alert_seconds": 4,
+        "longest_episode_seconds": 2
+      },
+      "price_observed_rows": 360,
+      "modbus_unauthorized_writes": 0,
+      "arp_identity_mismatch_packets": 0,
+      "interpretation": "POSTHOC multi-scenario architecture selection; source-IP and ARP claims are unauthenticated; price lane is regime novelty, not publisher authenticity."
+    },
+    {
+      "scenario": "S1_industroyer_pv",
+      "rows": 1798,
+      "physics": {
+        "tp": 11,
+        "fp": 10,
+        "fn": 902,
+        "tn": 875,
+        "precision": 0.52381,
+        "recall": 0.01205,
+        "f1": 0.02355,
+        "clean_fpr": 0.0113
+      },
+      "modbus_source_hold5": {
+        "tp": 894,
+        "fp": 11,
+        "fn": 19,
+        "tn": 874,
+        "precision": 0.98785,
+        "recall": 0.97919,
+        "f1": 0.9835,
+        "clean_fpr": 0.01243
+      },
+      "arp_claim_hold2": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 913,
+        "tn": 885,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.0
+      },
+      "price_domain": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 913,
+        "tn": 885,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.0
+      },
+      "four_lane_or": {
+        "tp": 894,
+        "fp": 21,
+        "fn": 19,
+        "tn": 864,
+        "precision": 0.97705,
+        "recall": 0.97919,
+        "f1": 0.97812,
+        "clean_fpr": 0.02373
+      },
+      "leave_one_lane_out": {
+        "physics": {
+          "without_lane": {
+            "tp": 894,
+            "fp": 11,
+            "fn": 19,
+            "tn": 874,
+            "precision": 0.98785,
+            "recall": 0.97919,
+            "f1": 0.9835,
+            "clean_fpr": 0.01243
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 10
+        },
+        "modbus_source_hold5": {
+          "without_lane": {
+            "tp": 11,
+            "fp": 10,
+            "fn": 902,
+            "tn": 875,
+            "precision": 0.52381,
+            "recall": 0.01205,
+            "f1": 0.02355,
+            "clean_fpr": 0.0113
+          },
+          "exclusive_true_positive_rows": 883,
+          "exclusive_false_positive_rows": 11
+        },
+        "arp_claim_hold2": {
+          "without_lane": {
+            "tp": 894,
+            "fp": 21,
+            "fn": 19,
+            "tn": 864,
+            "precision": 0.97705,
+            "recall": 0.97919,
+            "f1": 0.97812,
+            "clean_fpr": 0.02373
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        },
+        "price_domain": {
+          "without_lane": {
+            "tp": 894,
+            "fp": 21,
+            "fn": 19,
+            "tn": 864,
+            "precision": 0.97705,
+            "recall": 0.97919,
+            "f1": 0.97812,
+            "clean_fpr": 0.02373
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        }
+      },
+      "clean_alert_episodes": {
+        "episodes": 5,
+        "alert_seconds": 21,
+        "longest_episode_seconds": 11
+      },
+      "price_observed_rows": 1759,
+      "modbus_unauthorized_writes": 520,
+      "arp_identity_mismatch_packets": 0,
+      "interpretation": "POSTHOC multi-scenario architecture selection; source-IP and ARP claims are unauthenticated; price lane is regime novelty, not publisher authenticity."
+    },
+    {
+      "scenario": "S2_industroyer_bss",
+      "rows": 1768,
+      "physics": {
+        "tp": 5,
+        "fp": 5,
+        "fn": 898,
+        "tn": 860,
+        "precision": 0.5,
+        "recall": 0.00554,
+        "f1": 0.01095,
+        "clean_fpr": 0.00578
+      },
+      "modbus_source_hold5": {
+        "tp": 894,
+        "fp": 10,
+        "fn": 9,
+        "tn": 855,
+        "precision": 0.98894,
+        "recall": 0.99003,
+        "f1": 0.98949,
+        "clean_fpr": 0.01156
+      },
+      "arp_claim_hold2": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 903,
+        "tn": 865,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.0
+      },
+      "price_domain": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 903,
+        "tn": 865,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.0
+      },
+      "four_lane_or": {
+        "tp": 894,
+        "fp": 15,
+        "fn": 9,
+        "tn": 850,
+        "precision": 0.9835,
+        "recall": 0.99003,
+        "f1": 0.98675,
+        "clean_fpr": 0.01734
+      },
+      "leave_one_lane_out": {
+        "physics": {
+          "without_lane": {
+            "tp": 894,
+            "fp": 10,
+            "fn": 9,
+            "tn": 855,
+            "precision": 0.98894,
+            "recall": 0.99003,
+            "f1": 0.98949,
+            "clean_fpr": 0.01156
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 5
+        },
+        "modbus_source_hold5": {
+          "without_lane": {
+            "tp": 5,
+            "fp": 5,
+            "fn": 898,
+            "tn": 860,
+            "precision": 0.5,
+            "recall": 0.00554,
+            "f1": 0.01095,
+            "clean_fpr": 0.00578
+          },
+          "exclusive_true_positive_rows": 889,
+          "exclusive_false_positive_rows": 10
+        },
+        "arp_claim_hold2": {
+          "without_lane": {
+            "tp": 894,
+            "fp": 15,
+            "fn": 9,
+            "tn": 850,
+            "precision": 0.9835,
+            "recall": 0.99003,
+            "f1": 0.98675,
+            "clean_fpr": 0.01734
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        },
+        "price_domain": {
+          "without_lane": {
+            "tp": 894,
+            "fp": 15,
+            "fn": 9,
+            "tn": 850,
+            "precision": 0.9835,
+            "recall": 0.99003,
+            "f1": 0.98675,
+            "clean_fpr": 0.01734
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        }
+      },
+      "clean_alert_episodes": {
+        "episodes": 4,
+        "alert_seconds": 15,
+        "longest_episode_seconds": 10
+      },
+      "price_observed_rows": 1758,
+      "modbus_unauthorized_writes": 698,
+      "arp_identity_mismatch_packets": 0,
+      "interpretation": "POSTHOC multi-scenario architecture selection; source-IP and ARP claims are unauthenticated; price lane is regime novelty, not publisher authenticity."
+    },
+    {
+      "scenario": "S3_arp_spoof_bss_meter_half_values",
+      "rows": 1800,
+      "physics": {
+        "tp": 364,
+        "fp": 4,
+        "fn": 548,
+        "tn": 884,
+        "precision": 0.98913,
+        "recall": 0.39912,
+        "f1": 0.56875,
+        "clean_fpr": 0.0045
+      },
+      "modbus_source_hold5": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 912,
+        "tn": 888,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.0
+      },
+      "arp_claim_hold2": {
+        "tp": 904,
+        "fp": 0,
+        "fn": 8,
+        "tn": 888,
+        "precision": 1.0,
+        "recall": 0.99123,
+        "f1": 0.99559,
+        "clean_fpr": 0.0
+      },
+      "price_domain": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 912,
+        "tn": 888,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.0
+      },
+      "four_lane_or": {
+        "tp": 904,
+        "fp": 4,
+        "fn": 8,
+        "tn": 884,
+        "precision": 0.99559,
+        "recall": 0.99123,
+        "f1": 0.99341,
+        "clean_fpr": 0.0045
+      },
+      "leave_one_lane_out": {
+        "physics": {
+          "without_lane": {
+            "tp": 904,
+            "fp": 0,
+            "fn": 8,
+            "tn": 888,
+            "precision": 1.0,
+            "recall": 0.99123,
+            "f1": 0.99559,
+            "clean_fpr": 0.0
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 4
+        },
+        "modbus_source_hold5": {
+          "without_lane": {
+            "tp": 904,
+            "fp": 4,
+            "fn": 8,
+            "tn": 884,
+            "precision": 0.99559,
+            "recall": 0.99123,
+            "f1": 0.99341,
+            "clean_fpr": 0.0045
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        },
+        "arp_claim_hold2": {
+          "without_lane": {
+            "tp": 364,
+            "fp": 4,
+            "fn": 548,
+            "tn": 884,
+            "precision": 0.98913,
+            "recall": 0.39912,
+            "f1": 0.56875,
+            "clean_fpr": 0.0045
+          },
+          "exclusive_true_positive_rows": 540,
+          "exclusive_false_positive_rows": 0
+        },
+        "price_domain": {
+          "without_lane": {
+            "tp": 904,
+            "fp": 4,
+            "fn": 8,
+            "tn": 884,
+            "precision": 0.99559,
+            "recall": 0.99123,
+            "f1": 0.99341,
+            "clean_fpr": 0.0045
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        }
+      },
+      "clean_alert_episodes": {
+        "episodes": 3,
+        "alert_seconds": 4,
+        "longest_episode_seconds": 2
+      },
+      "price_observed_rows": 1794,
+      "modbus_unauthorized_writes": 0,
+      "arp_identity_mismatch_packets": 904,
+      "interpretation": "POSTHOC multi-scenario architecture selection; source-IP and ARP claims are unauthenticated; price lane is regime novelty, not publisher authenticity."
+    },
+    {
+      "scenario": "S4_arp_spoof_loads_pv_two_phase",
+      "rows": 1798,
+      "physics": {
+        "tp": 1243,
+        "fp": 6,
+        "fn": 14,
+        "tn": 535,
+        "precision": 0.9952,
+        "recall": 0.98886,
+        "f1": 0.99202,
+        "clean_fpr": 0.01109
+      },
+      "modbus_source_hold5": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1257,
+        "tn": 541,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.0
+      },
+      "arp_claim_hold2": {
+        "tp": 1230,
+        "fp": 0,
+        "fn": 27,
+        "tn": 541,
+        "precision": 1.0,
+        "recall": 0.97852,
+        "f1": 0.98914,
+        "clean_fpr": 0.0
+      },
+      "price_domain": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1257,
+        "tn": 541,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.0
+      },
+      "four_lane_or": {
+        "tp": 1243,
+        "fp": 6,
+        "fn": 14,
+        "tn": 535,
+        "precision": 0.9952,
+        "recall": 0.98886,
+        "f1": 0.99202,
+        "clean_fpr": 0.01109
+      },
+      "leave_one_lane_out": {
+        "physics": {
+          "without_lane": {
+            "tp": 1230,
+            "fp": 0,
+            "fn": 27,
+            "tn": 541,
+            "precision": 1.0,
+            "recall": 0.97852,
+            "f1": 0.98914,
+            "clean_fpr": 0.0
+          },
+          "exclusive_true_positive_rows": 13,
+          "exclusive_false_positive_rows": 6
+        },
+        "modbus_source_hold5": {
+          "without_lane": {
+            "tp": 1243,
+            "fp": 6,
+            "fn": 14,
+            "tn": 535,
+            "precision": 0.9952,
+            "recall": 0.98886,
+            "f1": 0.99202,
+            "clean_fpr": 0.01109
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        },
+        "arp_claim_hold2": {
+          "without_lane": {
+            "tp": 1243,
+            "fp": 6,
+            "fn": 14,
+            "tn": 535,
+            "precision": 0.9952,
+            "recall": 0.98886,
+            "f1": 0.99202,
+            "clean_fpr": 0.01109
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        },
+        "price_domain": {
+          "without_lane": {
+            "tp": 1243,
+            "fp": 6,
+            "fn": 14,
+            "tn": 535,
+            "precision": 0.9952,
+            "recall": 0.98886,
+            "f1": 0.99202,
+            "clean_fpr": 0.01109
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        }
+      },
+      "clean_alert_episodes": {
+        "episodes": 2,
+        "alert_seconds": 6,
+        "longest_episode_seconds": 3
+      },
+      "price_observed_rows": 1758,
+      "modbus_unauthorized_writes": 0,
+      "arp_identity_mismatch_packets": 2429,
+      "interpretation": "POSTHOC multi-scenario architecture selection; source-IP and ARP claims are unauthenticated; price lane is regime novelty, not publisher authenticity."
+    },
+    {
+      "scenario": "S5_arp_spoof_loads_pv_bss_two_phase",
+      "rows": 1800,
+      "physics": {
+        "tp": 843,
+        "fp": 3,
+        "fn": 498,
+        "tn": 456,
+        "precision": 0.99645,
+        "recall": 0.62864,
+        "f1": 0.77092,
+        "clean_fpr": 0.00654
+      },
+      "modbus_source_hold5": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1341,
+        "tn": 459,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.0
+      },
+      "arp_claim_hold2": {
+        "tp": 1305,
+        "fp": 8,
+        "fn": 36,
+        "tn": 451,
+        "precision": 0.99391,
+        "recall": 0.97315,
+        "f1": 0.98342,
+        "clean_fpr": 0.01743
+      },
+      "price_domain": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1341,
+        "tn": 459,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.0
+      },
+      "four_lane_or": {
+        "tp": 1327,
+        "fp": 11,
+        "fn": 14,
+        "tn": 448,
+        "precision": 0.99178,
+        "recall": 0.98956,
+        "f1": 0.99067,
+        "clean_fpr": 0.02397
+      },
+      "leave_one_lane_out": {
+        "physics": {
+          "without_lane": {
+            "tp": 1305,
+            "fp": 8,
+            "fn": 36,
+            "tn": 451,
+            "precision": 0.99391,
+            "recall": 0.97315,
+            "f1": 0.98342,
+            "clean_fpr": 0.01743
+          },
+          "exclusive_true_positive_rows": 22,
+          "exclusive_false_positive_rows": 3
+        },
+        "modbus_source_hold5": {
+          "without_lane": {
+            "tp": 1327,
+            "fp": 11,
+            "fn": 14,
+            "tn": 448,
+            "precision": 0.99178,
+            "recall": 0.98956,
+            "f1": 0.99067,
+            "clean_fpr": 0.02397
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        },
+        "arp_claim_hold2": {
+          "without_lane": {
+            "tp": 843,
+            "fp": 3,
+            "fn": 498,
+            "tn": 456,
+            "precision": 0.99645,
+            "recall": 0.62864,
+            "f1": 0.77092,
+            "clean_fpr": 0.00654
+          },
+          "exclusive_true_positive_rows": 484,
+          "exclusive_false_positive_rows": 8
+        },
+        "price_domain": {
+          "without_lane": {
+            "tp": 1327,
+            "fp": 11,
+            "fn": 14,
+            "tn": 448,
+            "precision": 0.99178,
+            "recall": 0.98956,
+            "f1": 0.99067,
+            "clean_fpr": 0.02397
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        }
+      },
+      "clean_alert_episodes": {
+        "episodes": 2,
+        "alert_seconds": 11,
+        "longest_episode_seconds": 8
+      },
+      "price_observed_rows": 1798,
+      "modbus_unauthorized_writes": 0,
+      "arp_identity_mismatch_packets": 2068,
+      "interpretation": "POSTHOC multi-scenario architecture selection; source-IP and ARP claims are unauthenticated; price lane is regime novelty, not publisher authenticity."
+    },
+    {
+      "scenario": "S6_mqtt_supply_chain_compromise",
+      "rows": 1800,
+      "physics": {
+        "tp": 42,
+        "fp": 0,
+        "fn": 1308,
+        "tn": 450,
+        "precision": 1.0,
+        "recall": 0.03111,
+        "f1": 0.06034,
+        "clean_fpr": 0.0
+      },
+      "modbus_source_hold5": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1350,
+        "tn": 450,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.0
+      },
+      "arp_claim_hold2": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1350,
+        "tn": 450,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.0
+      },
+      "price_domain": {
+        "tp": 1350,
+        "fp": 12,
+        "fn": 0,
+        "tn": 438,
+        "precision": 0.99119,
+        "recall": 1.0,
+        "f1": 0.99558,
+        "clean_fpr": 0.02667
+      },
+      "four_lane_or": {
+        "tp": 1350,
+        "fp": 12,
+        "fn": 0,
+        "tn": 438,
+        "precision": 0.99119,
+        "recall": 1.0,
+        "f1": 0.99558,
+        "clean_fpr": 0.02667
+      },
+      "leave_one_lane_out": {
+        "physics": {
+          "without_lane": {
+            "tp": 1350,
+            "fp": 12,
+            "fn": 0,
+            "tn": 438,
+            "precision": 0.99119,
+            "recall": 1.0,
+            "f1": 0.99558,
+            "clean_fpr": 0.02667
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        },
+        "modbus_source_hold5": {
+          "without_lane": {
+            "tp": 1350,
+            "fp": 12,
+            "fn": 0,
+            "tn": 438,
+            "precision": 0.99119,
+            "recall": 1.0,
+            "f1": 0.99558,
+            "clean_fpr": 0.02667
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        },
+        "arp_claim_hold2": {
+          "without_lane": {
+            "tp": 1350,
+            "fp": 12,
+            "fn": 0,
+            "tn": 438,
+            "precision": 0.99119,
+            "recall": 1.0,
+            "f1": 0.99558,
+            "clean_fpr": 0.02667
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        },
+        "price_domain": {
+          "without_lane": {
+            "tp": 42,
+            "fp": 0,
+            "fn": 1308,
+            "tn": 450,
+            "precision": 1.0,
+            "recall": 0.03111,
+            "f1": 0.06034,
+            "clean_fpr": 0.0
+          },
+          "exclusive_true_positive_rows": 1308,
+          "exclusive_false_positive_rows": 12
+        }
+      },
+      "clean_alert_episodes": {
+        "episodes": 1,
+        "alert_seconds": 12,
+        "longest_episode_seconds": 12
+      },
+      "price_observed_rows": 1362,
+      "modbus_unauthorized_writes": 0,
+      "arp_identity_mismatch_packets": 0,
+      "interpretation": "POSTHOC multi-scenario architecture selection; source-IP and ARP claims are unauthenticated; price lane is regime novelty, not publisher authenticity."
+    },
+    {
+      "scenario": "S1_industroyer_pv_alt",
+      "rows": 1792,
+      "physics": {
+        "tp": 19,
+        "fp": 12,
+        "fn": 891,
+        "tn": 870,
+        "precision": 0.6129,
+        "recall": 0.02088,
+        "f1": 0.04038,
+        "clean_fpr": 0.01361
+      },
+      "modbus_source_hold5": {
+        "tp": 892,
+        "fp": 11,
+        "fn": 18,
+        "tn": 871,
+        "precision": 0.98782,
+        "recall": 0.98022,
+        "f1": 0.984,
+        "clean_fpr": 0.01247
+      },
+      "arp_claim_hold2": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 910,
+        "tn": 882,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.0
+      },
+      "price_domain": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 910,
+        "tn": 882,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "clean_fpr": 0.0
+      },
+      "four_lane_or": {
+        "tp": 892,
+        "fp": 23,
+        "fn": 18,
+        "tn": 859,
+        "precision": 0.97486,
+        "recall": 0.98022,
+        "f1": 0.97753,
+        "clean_fpr": 0.02608
+      },
+      "leave_one_lane_out": {
+        "physics": {
+          "without_lane": {
+            "tp": 892,
+            "fp": 11,
+            "fn": 18,
+            "tn": 871,
+            "precision": 0.98782,
+            "recall": 0.98022,
+            "f1": 0.984,
+            "clean_fpr": 0.01247
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 12
+        },
+        "modbus_source_hold5": {
+          "without_lane": {
+            "tp": 19,
+            "fp": 12,
+            "fn": 891,
+            "tn": 870,
+            "precision": 0.6129,
+            "recall": 0.02088,
+            "f1": 0.04038,
+            "clean_fpr": 0.01361
+          },
+          "exclusive_true_positive_rows": 873,
+          "exclusive_false_positive_rows": 11
+        },
+        "arp_claim_hold2": {
+          "without_lane": {
+            "tp": 892,
+            "fp": 23,
+            "fn": 18,
+            "tn": 859,
+            "precision": 0.97486,
+            "recall": 0.98022,
+            "f1": 0.97753,
+            "clean_fpr": 0.02608
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        },
+        "price_domain": {
+          "without_lane": {
+            "tp": 892,
+            "fp": 23,
+            "fn": 18,
+            "tn": 859,
+            "precision": 0.97486,
+            "recall": 0.98022,
+            "f1": 0.97753,
+            "clean_fpr": 0.02608
+          },
+          "exclusive_true_positive_rows": 0,
+          "exclusive_false_positive_rows": 0
+        }
+      },
+      "clean_alert_episodes": {
+        "episodes": 6,
+        "alert_seconds": 23,
+        "longest_episode_seconds": 11
+      },
+      "price_observed_rows": 1782,
+      "modbus_unauthorized_writes": 862,
+      "arp_identity_mismatch_packets": 0,
+      "interpretation": "POSTHOC multi-scenario architecture selection; source-IP and ARP claims are unauthenticated; price lane is regime novelty, not publisher authenticity."
+    }
+  ]
+}

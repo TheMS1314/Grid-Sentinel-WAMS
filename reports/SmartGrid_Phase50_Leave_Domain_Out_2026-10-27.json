@@ -1,0 +1,439 @@
+{
+  "design": "train two domains, hold third domain fully excluded; labels binary (all !=1 attack)",
+  "source": "Elrawy et al., Zenodo 8375657, publisher MD5 pinned by loader",
+  "not_deployment_evidence": "These domains are one publication's engineered-feature environments, not independent real utilities; post-hoc candidate comparison has no final blind test.",
+  "candidates": [
+    {
+      "target": "real_modbus",
+      "train": [
+        "sim_modbus",
+        "sim_mms"
+      ],
+      "variant": "flow_only",
+      "model": "rf_pooled",
+      "normal": 3438,
+      "attacks": 2145,
+      "tp": 2143,
+      "fp": 496,
+      "fn": 2,
+      "tn": 2942,
+      "precision": 0.81205,
+      "recall": 0.999068,
+      "f1": 0.895903
+    },
+    {
+      "target": "real_modbus",
+      "train": [
+        "sim_modbus",
+        "sim_mms"
+      ],
+      "variant": "flow_only",
+      "model": "rf_domain_balanced",
+      "normal": 3438,
+      "attacks": 2145,
+      "tp": 2143,
+      "fp": 504,
+      "fn": 2,
+      "tn": 2934,
+      "precision": 0.809596,
+      "recall": 0.999068,
+      "f1": 0.894407
+    },
+    {
+      "target": "real_modbus",
+      "train": [
+        "sim_modbus",
+        "sim_mms"
+      ],
+      "variant": "flow_only",
+      "model": "robust_logistic",
+      "normal": 3438,
+      "attacks": 2145,
+      "tp": 2145,
+      "fp": 707,
+      "fn": 0,
+      "tn": 2731,
+      "precision": 0.752104,
+      "recall": 1.0,
+      "f1": 0.858515
+    },
+    {
+      "target": "real_modbus",
+      "train": [
+        "sim_modbus",
+        "sim_mms"
+      ],
+      "variant": "flow_only",
+      "model": "hist_gradient_boosting",
+      "normal": 3438,
+      "attacks": 2145,
+      "tp": 2143,
+      "fp": 498,
+      "fn": 2,
+      "tn": 2940,
+      "precision": 0.811435,
+      "recall": 0.999068,
+      "f1": 0.895529
+    },
+    {
+      "target": "real_modbus",
+      "train": [
+        "sim_modbus",
+        "sim_mms"
+      ],
+      "variant": "flow_plus_arp",
+      "model": "rf_pooled",
+      "normal": 3438,
+      "attacks": 2145,
+      "tp": 2143,
+      "fp": 492,
+      "fn": 2,
+      "tn": 2946,
+      "precision": 0.813283,
+      "recall": 0.999068,
+      "f1": 0.896653
+    },
+    {
+      "target": "real_modbus",
+      "train": [
+        "sim_modbus",
+        "sim_mms"
+      ],
+      "variant": "flow_plus_arp",
+      "model": "rf_domain_balanced",
+      "normal": 3438,
+      "attacks": 2145,
+      "tp": 2143,
+      "fp": 492,
+      "fn": 2,
+      "tn": 2946,
+      "precision": 0.813283,
+      "recall": 0.999068,
+      "f1": 0.896653
+    },
+    {
+      "target": "real_modbus",
+      "train": [
+        "sim_modbus",
+        "sim_mms"
+      ],
+      "variant": "flow_plus_arp",
+      "model": "robust_logistic",
+      "normal": 3438,
+      "attacks": 2145,
+      "tp": 2145,
+      "fp": 3418,
+      "fn": 0,
+      "tn": 20,
+      "precision": 0.385583,
+      "recall": 1.0,
+      "f1": 0.556565
+    },
+    {
+      "target": "real_modbus",
+      "train": [
+        "sim_modbus",
+        "sim_mms"
+      ],
+      "variant": "flow_plus_arp",
+      "model": "hist_gradient_boosting",
+      "normal": 3438,
+      "attacks": 2145,
+      "tp": 2143,
+      "fp": 470,
+      "fn": 2,
+      "tn": 2968,
+      "precision": 0.82013,
+      "recall": 0.999068,
+      "f1": 0.900799
+    },
+    {
+      "target": "sim_modbus",
+      "train": [
+        "real_modbus",
+        "sim_mms"
+      ],
+      "variant": "flow_only",
+      "model": "rf_pooled",
+      "normal": 2089,
+      "attacks": 712,
+      "tp": 659,
+      "fp": 129,
+      "fn": 53,
+      "tn": 1960,
+      "precision": 0.836294,
+      "recall": 0.925562,
+      "f1": 0.878667
+    },
+    {
+      "target": "sim_modbus",
+      "train": [
+        "real_modbus",
+        "sim_mms"
+      ],
+      "variant": "flow_only",
+      "model": "rf_domain_balanced",
+      "normal": 2089,
+      "attacks": 712,
+      "tp": 660,
+      "fp": 134,
+      "fn": 52,
+      "tn": 1955,
+      "precision": 0.831234,
+      "recall": 0.926966,
+      "f1": 0.876494
+    },
+    {
+      "target": "sim_modbus",
+      "train": [
+        "real_modbus",
+        "sim_mms"
+      ],
+      "variant": "flow_only",
+      "model": "robust_logistic",
+      "normal": 2089,
+      "attacks": 712,
+      "tp": 707,
+      "fp": 142,
+      "fn": 5,
+      "tn": 1947,
+      "precision": 0.832744,
+      "recall": 0.992978,
+      "f1": 0.90583
+    },
+    {
+      "target": "sim_modbus",
+      "train": [
+        "real_modbus",
+        "sim_mms"
+      ],
+      "variant": "flow_only",
+      "model": "hist_gradient_boosting",
+      "normal": 2089,
+      "attacks": 712,
+      "tp": 598,
+      "fp": 36,
+      "fn": 114,
+      "tn": 2053,
+      "precision": 0.943218,
+      "recall": 0.839888,
+      "f1": 0.888559
+    },
+    {
+      "target": "sim_modbus",
+      "train": [
+        "real_modbus",
+        "sim_mms"
+      ],
+      "variant": "flow_plus_arp",
+      "model": "rf_pooled",
+      "normal": 2089,
+      "attacks": 712,
+      "tp": 643,
+      "fp": 50,
+      "fn": 69,
+      "tn": 2039,
+      "precision": 0.92785,
+      "recall": 0.90309,
+      "f1": 0.915302
+    },
+    {
+      "target": "sim_modbus",
+      "train": [
+        "real_modbus",
+        "sim_mms"
+      ],
+      "variant": "flow_plus_arp",
+      "model": "rf_domain_balanced",
+      "normal": 2089,
+      "attacks": 712,
+      "tp": 664,
+      "fp": 87,
+      "fn": 48,
+      "tn": 2002,
+      "precision": 0.884154,
+      "recall": 0.932584,
+      "f1": 0.907724
+    },
+    {
+      "target": "sim_modbus",
+      "train": [
+        "real_modbus",
+        "sim_mms"
+      ],
+      "variant": "flow_plus_arp",
+      "model": "robust_logistic",
+      "normal": 2089,
+      "attacks": 712,
+      "tp": 704,
+      "fp": 90,
+      "fn": 8,
+      "tn": 1999,
+      "precision": 0.88665,
+      "recall": 0.988764,
+      "f1": 0.934927
+    },
+    {
+      "target": "sim_modbus",
+      "train": [
+        "real_modbus",
+        "sim_mms"
+      ],
+      "variant": "flow_plus_arp",
+      "model": "hist_gradient_boosting",
+      "normal": 2089,
+      "attacks": 712,
+      "tp": 628,
+      "fp": 23,
+      "fn": 84,
+      "tn": 2066,
+      "precision": 0.96467,
+      "recall": 0.882022,
+      "f1": 0.921497
+    },
+    {
+      "target": "sim_mms",
+      "train": [
+        "real_modbus",
+        "sim_modbus"
+      ],
+      "variant": "flow_only",
+      "model": "rf_pooled",
+      "normal": 2091,
+      "attacks": 713,
+      "tp": 582,
+      "fp": 6,
+      "fn": 131,
+      "tn": 2085,
+      "precision": 0.989796,
+      "recall": 0.816269,
+      "f1": 0.894696
+    },
+    {
+      "target": "sim_mms",
+      "train": [
+        "real_modbus",
+        "sim_modbus"
+      ],
+      "variant": "flow_only",
+      "model": "rf_domain_balanced",
+      "normal": 2091,
+      "attacks": 713,
+      "tp": 561,
+      "fp": 6,
+      "fn": 152,
+      "tn": 2085,
+      "precision": 0.989418,
+      "recall": 0.786816,
+      "f1": 0.876563
+    },
+    {
+      "target": "sim_mms",
+      "train": [
+        "real_modbus",
+        "sim_modbus"
+      ],
+      "variant": "flow_only",
+      "model": "robust_logistic",
+      "normal": 2091,
+      "attacks": 713,
+      "tp": 593,
+      "fp": 8,
+      "fn": 120,
+      "tn": 2083,
+      "precision": 0.986689,
+      "recall": 0.831697,
+      "f1": 0.902588
+    },
+    {
+      "target": "sim_mms",
+      "train": [
+        "real_modbus",
+        "sim_modbus"
+      ],
+      "variant": "flow_only",
+      "model": "hist_gradient_boosting",
+      "normal": 2091,
+      "attacks": 713,
+      "tp": 552,
+      "fp": 5,
+      "fn": 161,
+      "tn": 2086,
+      "precision": 0.991023,
+      "recall": 0.774194,
+      "f1": 0.869291
+    },
+    {
+      "target": "sim_mms",
+      "train": [
+        "real_modbus",
+        "sim_modbus"
+      ],
+      "variant": "flow_plus_arp",
+      "model": "rf_pooled",
+      "normal": 2091,
+      "attacks": 713,
+      "tp": 646,
+      "fp": 5,
+      "fn": 67,
+      "tn": 2086,
+      "precision": 0.99232,
+      "recall": 0.906031,
+      "f1": 0.947214
+    },
+    {
+      "target": "sim_mms",
+      "train": [
+        "real_modbus",
+        "sim_modbus"
+      ],
+      "variant": "flow_plus_arp",
+      "model": "rf_domain_balanced",
+      "normal": 2091,
+      "attacks": 713,
+      "tp": 628,
+      "fp": 5,
+      "fn": 85,
+      "tn": 2086,
+      "precision": 0.992101,
+      "recall": 0.880785,
+      "f1": 0.933135
+    },
+    {
+      "target": "sim_mms",
+      "train": [
+        "real_modbus",
+        "sim_modbus"
+      ],
+      "variant": "flow_plus_arp",
+      "model": "robust_logistic",
+      "normal": 2091,
+      "attacks": 713,
+      "tp": 645,
+      "fp": 7,
+      "fn": 68,
+      "tn": 2084,
+      "precision": 0.989264,
+      "recall": 0.904628,
+      "f1": 0.945055
+    },
+    {
+      "target": "sim_mms",
+      "train": [
+        "real_modbus",
+        "sim_modbus"
+      ],
+      "variant": "flow_plus_arp",
+      "model": "hist_gradient_boosting",
+      "normal": 2091,
+      "attacks": 713,
+      "tp": 645,
+      "fp": 4,
+      "fn": 68,
+      "tn": 2087,
+      "precision": 0.993837,
+      "recall": 0.904628,
+      "f1": 0.947137
+    }
+  ]
+}

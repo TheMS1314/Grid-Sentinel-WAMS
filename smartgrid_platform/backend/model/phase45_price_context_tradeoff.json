@@ -1,0 +1,138 @@
+{
+  "status": "POSTHOC_PRICE_CONTEXT_POLICY_TRADEOFF_NOT_DEPLOYED",
+  "full_or_macro_f1": 0.98943,
+  "security_only_macro_f1": 0.83355,
+  "security_only_lanes": [
+    "physics",
+    "modbus_source_hold5",
+    "arp_claim_hold2"
+  ],
+  "price_lane_treatment": "CONTEXT_REVIEW_ONLY_NOT_SECURITY_VERDICT",
+  "price_exclusive_attack_rows_not_security_alerted": 1308,
+  "price_exclusive_benign_alert_rows_not_security_alerted": 12,
+  "scenarios": [
+    {
+      "scenario": "S1_industroyer_pv",
+      "full_or_f1": 0.97812,
+      "security_only_f1": 0.97812,
+      "full_or_tp": 894,
+      "security_only_tp": 894,
+      "full_or_fp": 21,
+      "security_only_fp": 21,
+      "price_only_attack_review_rows": 0,
+      "price_only_benign_review_rows": 0
+    },
+    {
+      "scenario": "S2_industroyer_bss",
+      "full_or_f1": 0.98675,
+      "security_only_f1": 0.98675,
+      "full_or_tp": 894,
+      "security_only_tp": 894,
+      "full_or_fp": 15,
+      "security_only_fp": 15,
+      "price_only_attack_review_rows": 0,
+      "price_only_benign_review_rows": 0
+    },
+    {
+      "scenario": "S3_arp_spoof_bss_meter_half_values",
+      "full_or_f1": 0.99341,
+      "security_only_f1": 0.99341,
+      "full_or_tp": 904,
+      "security_only_tp": 904,
+      "full_or_fp": 4,
+      "security_only_fp": 4,
+      "price_only_attack_review_rows": 0,
+      "price_only_benign_review_rows": 0
+    },
+    {
+      "scenario": "S4_arp_spoof_loads_pv_two_phase",
+      "full_or_f1": 0.99202,
+      "security_only_f1": 0.99202,
+      "full_or_tp": 1243,
+      "security_only_tp": 1243,
+      "full_or_fp": 6,
+      "security_only_fp": 6,
+      "price_only_attack_review_rows": 0,
+      "price_only_benign_review_rows": 0
+    },
+    {
+      "scenario": "S5_arp_spoof_loads_pv_bss_two_phase",
+      "full_or_f1": 0.99067,
+      "security_only_f1": 0.99067,
+      "full_or_tp": 1327,
+      "security_only_tp": 1327,
+      "full_or_fp": 11,
+      "security_only_fp": 11,
+      "price_only_attack_review_rows": 0,
+      "price_only_benign_review_rows": 0
+    },
+    {
+      "scenario": "S6_mqtt_supply_chain_compromise",
+      "full_or_f1": 0.99558,
+      "security_only_f1": 0.06034,
+      "full_or_tp": 1350,
+      "security_only_tp": 42,
+      "full_or_fp": 12,
+      "security_only_fp": 0,
+      "price_only_attack_review_rows": 1308,
+      "price_only_benign_review_rows": 12
+    }
+  ],
+  "benign_price_offset_stress": [
+    {
+      "additive_shift_eur_per_kwh": -0.1,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 360,
+      "benign_false_review_fraction": 1.0
+    },
+    {
+      "additive_shift_eur_per_kwh": -0.05,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 360,
+      "benign_false_review_fraction": 1.0
+    },
+    {
+      "additive_shift_eur_per_kwh": -0.02,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 340,
+      "benign_false_review_fraction": 0.944444
+    },
+    {
+      "additive_shift_eur_per_kwh": -0.01,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 340,
+      "benign_false_review_fraction": 0.944444
+    },
+    {
+      "additive_shift_eur_per_kwh": 0.0,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 0,
+      "benign_false_review_fraction": 0.0
+    },
+    {
+      "additive_shift_eur_per_kwh": 0.01,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 0,
+      "benign_false_review_fraction": 0.0
+    },
+    {
+      "additive_shift_eur_per_kwh": 0.02,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 0,
+      "benign_false_review_fraction": 0.0
+    },
+    {
+      "additive_shift_eur_per_kwh": 0.05,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 0,
+      "benign_false_review_fraction": 0.0
+    },
+    {
+      "additive_shift_eur_per_kwh": 0.1,
+      "observed_benign_seconds": 360,
+      "false_review_seconds": 0,
+      "benign_false_review_fraction": 0.0
+    }
+  ],
+  "warning": "Security-only path loses many S6 labeled attack rows; price-only context is still surfaced, not hidden. Entire comparison uses previously examined scenarios. S0 shifted offsets are synthetic and price-lane-only; other lane response under those shifts was not replayed. No live model was changed."
+}

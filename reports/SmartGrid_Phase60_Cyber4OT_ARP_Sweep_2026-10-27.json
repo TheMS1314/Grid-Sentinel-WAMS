@@ -1,0 +1,829 @@
+{
+  "calibration": {
+    "central_switch": {
+      "baseline": 1,
+      "benign_calibration": 2,
+      "heldout_normal": 3,
+      "unique_arp_targets_per_minute_max": 6
+    },
+    "plc_port": {
+      "baseline": 69,
+      "benign_calibration": 70,
+      "heldout_normal": 71,
+      "unique_arp_targets_per_minute_max": 5
+    }
+  },
+  "groups": {
+    "central_switch/benign": {
+      "arp_reviewed": 0,
+      "count": 1,
+      "either_reviewed": 0,
+      "tcp_reviewed": 0
+    },
+    "central_switch/host_scan": {
+      "arp_reviewed": 46,
+      "count": 60,
+      "either_reviewed": 60,
+      "tcp_reviewed": 60
+    },
+    "central_switch/ping_scan": {
+      "arp_reviewed": 5,
+      "count": 5,
+      "either_reviewed": 5,
+      "tcp_reviewed": 0
+    },
+    "plc_port/benign": {
+      "arp_reviewed": 0,
+      "count": 1,
+      "either_reviewed": 0,
+      "tcp_reviewed": 0
+    },
+    "plc_port/hijack_macof": {
+      "arp_reviewed": 7,
+      "count": 8,
+      "either_reviewed": 8,
+      "tcp_reviewed": 8
+    },
+    "plc_port/ping_scan": {
+      "arp_reviewed": 5,
+      "count": 5,
+      "either_reviewed": 5,
+      "tcp_reviewed": 0
+    },
+    "plc_port/plc_scan": {
+      "arp_reviewed": 0,
+      "count": 5,
+      "either_reviewed": 5,
+      "tcp_reviewed": 5
+    }
+  },
+  "rows": [
+    {
+      "arp_max_targets": 6,
+      "arp_review_minutes": 0,
+      "capture_id": 3,
+      "family": "benign",
+      "tcp_review_minutes": 0,
+      "truth": "normal",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 129,
+      "arp_review_minutes": 1,
+      "capture_id": 4,
+      "family": "ping_scan",
+      "tcp_review_minutes": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 131,
+      "arp_review_minutes": 1,
+      "capture_id": 5,
+      "family": "ping_scan",
+      "tcp_review_minutes": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 129,
+      "arp_review_minutes": 1,
+      "capture_id": 6,
+      "family": "ping_scan",
+      "tcp_review_minutes": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 87,
+      "arp_review_minutes": 2,
+      "capture_id": 7,
+      "family": "ping_scan",
+      "tcp_review_minutes": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 11,
+      "arp_review_minutes": 10,
+      "capture_id": 8,
+      "family": "ping_scan",
+      "tcp_review_minutes": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 6,
+      "arp_review_minutes": 0,
+      "capture_id": 9,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 1,
+      "capture_id": 10,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 1,
+      "capture_id": 11,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 9,
+      "arp_review_minutes": 8,
+      "capture_id": 12,
+      "family": "host_scan",
+      "tcp_review_minutes": 11,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 6,
+      "capture_id": 13,
+      "family": "host_scan",
+      "tcp_review_minutes": 11,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 6,
+      "arp_review_minutes": 0,
+      "capture_id": 14,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 9,
+      "arp_review_minutes": 1,
+      "capture_id": 15,
+      "family": "host_scan",
+      "tcp_review_minutes": 3,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 3,
+      "capture_id": 16,
+      "family": "host_scan",
+      "tcp_review_minutes": 4,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 7,
+      "arp_review_minutes": 6,
+      "capture_id": 17,
+      "family": "host_scan",
+      "tcp_review_minutes": 11,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 9,
+      "arp_review_minutes": 5,
+      "capture_id": 18,
+      "family": "host_scan",
+      "tcp_review_minutes": 11,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 9,
+      "arp_review_minutes": 1,
+      "capture_id": 19,
+      "family": "host_scan",
+      "tcp_review_minutes": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 9,
+      "arp_review_minutes": 2,
+      "capture_id": 20,
+      "family": "host_scan",
+      "tcp_review_minutes": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 10,
+      "arp_review_minutes": 2,
+      "capture_id": 21,
+      "family": "host_scan",
+      "tcp_review_minutes": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 9,
+      "arp_review_minutes": 6,
+      "capture_id": 22,
+      "family": "host_scan",
+      "tcp_review_minutes": 11,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 9,
+      "arp_review_minutes": 5,
+      "capture_id": 23,
+      "family": "host_scan",
+      "tcp_review_minutes": 10,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 6,
+      "arp_review_minutes": 0,
+      "capture_id": 24,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 6,
+      "arp_review_minutes": 0,
+      "capture_id": 25,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 1,
+      "capture_id": 26,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 9,
+      "arp_review_minutes": 10,
+      "capture_id": 27,
+      "family": "host_scan",
+      "tcp_review_minutes": 11,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 10,
+      "capture_id": 28,
+      "family": "host_scan",
+      "tcp_review_minutes": 10,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 6,
+      "arp_review_minutes": 0,
+      "capture_id": 29,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 7,
+      "arp_review_minutes": 1,
+      "capture_id": 30,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 5,
+      "arp_review_minutes": 0,
+      "capture_id": 31,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 3,
+      "capture_id": 32,
+      "family": "host_scan",
+      "tcp_review_minutes": 11,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 7,
+      "capture_id": 33,
+      "family": "host_scan",
+      "tcp_review_minutes": 10,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 5,
+      "arp_review_minutes": 0,
+      "capture_id": 34,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 6,
+      "arp_review_minutes": 0,
+      "capture_id": 35,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 4,
+      "arp_review_minutes": 0,
+      "capture_id": 36,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 7,
+      "arp_review_minutes": 3,
+      "capture_id": 37,
+      "family": "host_scan",
+      "tcp_review_minutes": 11,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 7,
+      "arp_review_minutes": 4,
+      "capture_id": 38,
+      "family": "host_scan",
+      "tcp_review_minutes": 10,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 9,
+      "arp_review_minutes": 2,
+      "capture_id": 39,
+      "family": "host_scan",
+      "tcp_review_minutes": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 1,
+      "capture_id": 40,
+      "family": "host_scan",
+      "tcp_review_minutes": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 7,
+      "arp_review_minutes": 1,
+      "capture_id": 41,
+      "family": "host_scan",
+      "tcp_review_minutes": 3,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 2,
+      "capture_id": 42,
+      "family": "host_scan",
+      "tcp_review_minutes": 11,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 4,
+      "capture_id": 43,
+      "family": "host_scan",
+      "tcp_review_minutes": 11,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 6,
+      "arp_review_minutes": 0,
+      "capture_id": 44,
+      "family": "host_scan",
+      "tcp_review_minutes": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 2,
+      "capture_id": 45,
+      "family": "host_scan",
+      "tcp_review_minutes": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 2,
+      "capture_id": 46,
+      "family": "host_scan",
+      "tcp_review_minutes": 4,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 10,
+      "arp_review_minutes": 2,
+      "capture_id": 47,
+      "family": "host_scan",
+      "tcp_review_minutes": 11,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 9,
+      "arp_review_minutes": 2,
+      "capture_id": 48,
+      "family": "host_scan",
+      "tcp_review_minutes": 10,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 4,
+      "arp_review_minutes": 0,
+      "capture_id": 49,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 7,
+      "arp_review_minutes": 1,
+      "capture_id": 50,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 5,
+      "arp_review_minutes": 0,
+      "capture_id": 51,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 9,
+      "arp_review_minutes": 7,
+      "capture_id": 52,
+      "family": "host_scan",
+      "tcp_review_minutes": 11,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 2,
+      "capture_id": 53,
+      "family": "host_scan",
+      "tcp_review_minutes": 10,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 6,
+      "arp_review_minutes": 0,
+      "capture_id": 54,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 5,
+      "arp_review_minutes": 0,
+      "capture_id": 55,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 10,
+      "arp_review_minutes": 1,
+      "capture_id": 56,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 9,
+      "arp_review_minutes": 8,
+      "capture_id": 57,
+      "family": "host_scan",
+      "tcp_review_minutes": 11,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 8,
+      "capture_id": 58,
+      "family": "host_scan",
+      "tcp_review_minutes": 10,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 1,
+      "capture_id": 59,
+      "family": "host_scan",
+      "tcp_review_minutes": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 7,
+      "arp_review_minutes": 1,
+      "capture_id": 60,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 2,
+      "capture_id": 61,
+      "family": "host_scan",
+      "tcp_review_minutes": 3,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 3,
+      "capture_id": 62,
+      "family": "host_scan",
+      "tcp_review_minutes": 13,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 2,
+      "capture_id": 63,
+      "family": "host_scan",
+      "tcp_review_minutes": 11,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 7,
+      "arp_review_minutes": 1,
+      "capture_id": 64,
+      "family": "host_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 1,
+      "capture_id": 65,
+      "family": "host_scan",
+      "tcp_review_minutes": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 8,
+      "arp_review_minutes": 1,
+      "capture_id": 66,
+      "family": "host_scan",
+      "tcp_review_minutes": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 9,
+      "arp_review_minutes": 3,
+      "capture_id": 67,
+      "family": "host_scan",
+      "tcp_review_minutes": 11,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 10,
+      "arp_review_minutes": 3,
+      "capture_id": 68,
+      "family": "host_scan",
+      "tcp_review_minutes": 10,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "arp_max_targets": 4,
+      "arp_review_minutes": 0,
+      "capture_id": 71,
+      "family": "benign",
+      "tcp_review_minutes": 0,
+      "truth": "normal",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 128,
+      "arp_review_minutes": 1,
+      "capture_id": 72,
+      "family": "ping_scan",
+      "tcp_review_minutes": 0,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 128,
+      "arp_review_minutes": 1,
+      "capture_id": 73,
+      "family": "ping_scan",
+      "tcp_review_minutes": 0,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 128,
+      "arp_review_minutes": 1,
+      "capture_id": 74,
+      "family": "ping_scan",
+      "tcp_review_minutes": 0,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 81,
+      "arp_review_minutes": 2,
+      "capture_id": 75,
+      "family": "ping_scan",
+      "tcp_review_minutes": 0,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 7,
+      "arp_review_minutes": 9,
+      "capture_id": 76,
+      "family": "ping_scan",
+      "tcp_review_minutes": 0,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 4,
+      "arp_review_minutes": 0,
+      "capture_id": 77,
+      "family": "plc_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 4,
+      "arp_review_minutes": 0,
+      "capture_id": 78,
+      "family": "plc_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 4,
+      "arp_review_minutes": 0,
+      "capture_id": 79,
+      "family": "plc_scan",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 4,
+      "arp_review_minutes": 0,
+      "capture_id": 80,
+      "family": "plc_scan",
+      "tcp_review_minutes": 11,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 4,
+      "arp_review_minutes": 0,
+      "capture_id": 81,
+      "family": "plc_scan",
+      "tcp_review_minutes": 11,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 206,
+      "arp_review_minutes": 1,
+      "capture_id": 82,
+      "family": "hijack_macof",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 106,
+      "arp_review_minutes": 1,
+      "capture_id": 84,
+      "family": "hijack_macof",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 93,
+      "arp_review_minutes": 1,
+      "capture_id": 86,
+      "family": "hijack_macof",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 86,
+      "arp_review_minutes": 1,
+      "capture_id": 88,
+      "family": "hijack_macof",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 292,
+      "arp_review_minutes": 1,
+      "capture_id": 90,
+      "family": "hijack_macof",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 249,
+      "arp_review_minutes": 1,
+      "capture_id": 92,
+      "family": "hijack_macof",
+      "tcp_review_minutes": 1,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 4,
+      "arp_review_minutes": 0,
+      "capture_id": 94,
+      "family": "hijack_macof",
+      "tcp_review_minutes": 5,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "arp_max_targets": 684,
+      "arp_review_minutes": 1,
+      "capture_id": 95,
+      "family": "hijack_macof",
+      "tcp_review_minutes": 3,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    }
+  ],
+  "source": "Cyber4OT Zenodo 15005190, checksum verified",
+  "warning": "ARP feature selected after inspection of Cyber4OT ping-scan misses; targets and benign thresholds assessed post-hoc. An OR combination is diagnostic only and unsafe to promote as cross-site validated accuracy."
+}

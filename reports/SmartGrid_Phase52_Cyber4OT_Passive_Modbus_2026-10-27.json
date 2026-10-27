@@ -1,0 +1,255 @@
+{
+  "frozen_ethernet_source_macs": [
+    "38:e0:8e:e0:04:e2",
+    "38:e0:8e:e0:69:ce",
+    "58:52:8a:bc:51:29",
+    "58:52:8a:bc:51:2b",
+    "84:2b:2b:a5:8b:6a"
+  ],
+  "frozen_modbus_client_ips": [
+    "192.168.127.20",
+    "192.168.127.6"
+  ],
+  "frozen_modbus_peer_mac_bindings": {
+    "192.168.127.20": [
+      "58:52:8a:bc:51:29"
+    ],
+    "192.168.127.21": [
+      "58:52:8a:bc:51:2b"
+    ],
+    "192.168.127.6": [
+      "84:2b:2b:a5:8b:6a"
+    ]
+  },
+  "observations": [
+    {
+      "alert_fusion": false,
+      "alert_ip_mac_conflict": false,
+      "alert_new_client": false,
+      "alert_new_ethernet_mac": false,
+      "attack_family": null,
+      "capture_id": 70,
+      "frames": 8116,
+      "known_ip_new_mac_packets": 0,
+      "modbus_client_ips": [
+        "192.168.127.20",
+        "192.168.127.6"
+      ],
+      "modbus_packets": 7198,
+      "new_client_packets": 0,
+      "new_ethernet_source_mac_packets": 0,
+      "truth_capture": "benign"
+    },
+    {
+      "alert_fusion": false,
+      "alert_ip_mac_conflict": false,
+      "alert_new_client": false,
+      "alert_new_ethernet_mac": false,
+      "attack_family": null,
+      "capture_id": 71,
+      "frames": 12147,
+      "known_ip_new_mac_packets": 0,
+      "modbus_client_ips": [
+        "192.168.127.20",
+        "192.168.127.6"
+      ],
+      "modbus_packets": 10773,
+      "new_client_packets": 0,
+      "new_ethernet_source_mac_packets": 0,
+      "truth_capture": "benign"
+    },
+    {
+      "alert_fusion": true,
+      "alert_ip_mac_conflict": false,
+      "alert_new_client": false,
+      "alert_new_ethernet_mac": true,
+      "attack_family": "macof_redirection",
+      "capture_id": 82,
+      "frames": 27368,
+      "known_ip_new_mac_packets": 0,
+      "modbus_client_ips": [
+        "192.168.127.20",
+        "192.168.127.6"
+      ],
+      "modbus_packets": 86,
+      "new_client_packets": 0,
+      "new_ethernet_source_mac_packets": 1349,
+      "truth_capture": "attack_scenario"
+    },
+    {
+      "alert_fusion": true,
+      "alert_ip_mac_conflict": false,
+      "alert_new_client": false,
+      "alert_new_ethernet_mac": true,
+      "attack_family": "macof_tcpkill",
+      "capture_id": 84,
+      "frames": 13759,
+      "known_ip_new_mac_packets": 0,
+      "modbus_client_ips": [
+        "192.168.127.20",
+        "192.168.127.6"
+      ],
+      "modbus_packets": 128,
+      "new_client_packets": 0,
+      "new_ethernet_source_mac_packets": 989,
+      "truth_capture": "attack_scenario"
+    },
+    {
+      "alert_fusion": true,
+      "alert_ip_mac_conflict": false,
+      "alert_new_client": false,
+      "alert_new_ethernet_mac": true,
+      "attack_family": "macof_tcpkill",
+      "capture_id": 86,
+      "frames": 14023,
+      "known_ip_new_mac_packets": 0,
+      "modbus_client_ips": [
+        "192.168.127.20",
+        "192.168.127.6"
+      ],
+      "modbus_packets": 94,
+      "new_client_packets": 0,
+      "new_ethernet_source_mac_packets": 827,
+      "truth_capture": "attack_scenario"
+    },
+    {
+      "alert_fusion": true,
+      "alert_ip_mac_conflict": false,
+      "alert_new_client": false,
+      "alert_new_ethernet_mac": true,
+      "attack_family": "macof_tcpkill",
+      "capture_id": 88,
+      "frames": 13131,
+      "known_ip_new_mac_packets": 0,
+      "modbus_client_ips": [
+        "192.168.127.20",
+        "192.168.127.6"
+      ],
+      "modbus_packets": 118,
+      "new_client_packets": 0,
+      "new_ethernet_source_mac_packets": 763,
+      "truth_capture": "attack_scenario"
+    },
+    {
+      "alert_fusion": true,
+      "alert_ip_mac_conflict": false,
+      "alert_new_client": true,
+      "alert_new_ethernet_mac": true,
+      "attack_family": "successful_modbus_hijack",
+      "capture_id": 90,
+      "frames": 25405,
+      "known_ip_new_mac_packets": 0,
+      "modbus_client_ips": [
+        "192.168.127.126",
+        "192.168.127.20",
+        "192.168.127.6"
+      ],
+      "modbus_packets": 1057,
+      "new_client_packets": 479,
+      "new_ethernet_source_mac_packets": 3360,
+      "truth_capture": "attack_scenario"
+    },
+    {
+      "alert_fusion": true,
+      "alert_ip_mac_conflict": false,
+      "alert_new_client": true,
+      "alert_new_ethernet_mac": true,
+      "attack_family": "unsuccessful_modbus_hijack",
+      "capture_id": 92,
+      "frames": 22041,
+      "known_ip_new_mac_packets": 0,
+      "modbus_client_ips": [
+        "192.168.127.126",
+        "192.168.127.20",
+        "192.168.127.6"
+      ],
+      "modbus_packets": 919,
+      "new_client_packets": 366,
+      "new_ethernet_source_mac_packets": 2817,
+      "truth_capture": "attack_scenario"
+    },
+    {
+      "alert_fusion": true,
+      "alert_ip_mac_conflict": false,
+      "alert_new_client": true,
+      "alert_new_ethernet_mac": true,
+      "attack_family": "post_hijack",
+      "capture_id": 94,
+      "frames": 11509,
+      "known_ip_new_mac_packets": 0,
+      "modbus_client_ips": [
+        "192.168.127.126",
+        "192.168.127.20",
+        "192.168.127.6"
+      ],
+      "modbus_packets": 11232,
+      "new_client_packets": 5627,
+      "new_ethernet_source_mac_packets": 5627,
+      "truth_capture": "attack_scenario"
+    },
+    {
+      "alert_fusion": true,
+      "alert_ip_mac_conflict": false,
+      "alert_new_client": true,
+      "alert_new_ethernet_mac": true,
+      "attack_family": "mixed_normal_then_hijack",
+      "capture_id": 95,
+      "frames": 71574,
+      "known_ip_new_mac_packets": 0,
+      "modbus_client_ips": [
+        "192.168.127.126",
+        "192.168.127.20",
+        "192.168.127.6"
+      ],
+      "modbus_packets": 16339,
+      "new_client_packets": 2711,
+      "new_ethernet_source_mac_packets": 9513,
+      "truth_capture": "attack_scenario"
+    }
+  ],
+  "protocol": "normal PLC-port capture 069 freezes IP/MAC Modbus policy; 070-071 held-out benign; even-numbered PLC-port attack captures 082-095 tested",
+  "publisher_zip_md5": "55510cbb43d8af72a69dfbcd6940daa5",
+  "source": "Cyber4OT, Zenodo 15005190 (Warsaw University of Technology)",
+  "summary": {
+    "alert_fusion": {
+      "attack_scenario_captures_alerted": 8,
+      "attack_scenario_captures_total": 8,
+      "benign_captures_alerted": 0,
+      "benign_captures_total": 2
+    },
+    "alert_ip_mac_conflict": {
+      "attack_scenario_captures_alerted": 0,
+      "attack_scenario_captures_total": 8,
+      "benign_captures_alerted": 0,
+      "benign_captures_total": 2
+    },
+    "alert_new_client": {
+      "attack_scenario_captures_alerted": 4,
+      "attack_scenario_captures_total": 8,
+      "benign_captures_alerted": 0,
+      "benign_captures_total": 2
+    },
+    "alert_new_ethernet_mac": {
+      "attack_scenario_captures_alerted": 8,
+      "attack_scenario_captures_total": 8,
+      "benign_captures_alerted": 0,
+      "benign_captures_total": 2
+    }
+  },
+  "training_capture": {
+    "alert_ip_mac_conflict": false,
+    "alert_new_client": false,
+    "alert_new_ethernet_mac": false,
+    "capture_id": 69,
+    "frames": 4081,
+    "known_ip_new_mac_packets": 0,
+    "modbus_client_ips": [
+      "192.168.127.20",
+      "192.168.127.6"
+    ],
+    "modbus_packets": 3606,
+    "new_client_packets": 0,
+    "new_ethernet_source_mac_packets": 0
+  },
+  "warning": "Exploratory capture-level detection of scenario-containing files; exact attack windows are unknown. NOT packet-level F1, attack-event recall, or independent-site performance."
+}

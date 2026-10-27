@@ -1,0 +1,17 @@
+{
+  "status": "ASSUMPTION_SENSITIVITY_NOT_INDEPENDENT_VALIDATION",
+  "confidence": 0.95,
+  "observed_clean_seconds": 3442,
+  "observed_arp_packets": 28449,
+  "observed_scenarios": 5,
+  "observed_arp_alert_seconds": 0,
+  "hypothetical_iid_per_second_upper_rate": 0.00086997,
+  "hypothetical_iid_per_packet_upper_mismatch_rate": 0.0001053,
+  "hypothetical_independent_scenario_upper_event_probability": 0.45071973,
+  "warnings": [
+    "Every confidence bound is conditional on independence and representative sampling, neither demonstrated here.",
+    "Five scenario captures share one research topology; seconds and ARP packets are autocorrelated.",
+    "The ARP rule was designed after examining these campaigns; these are not blind deployment trials.",
+    "No prospective threshold or real-world false-alarm certification can be inferred."
+  ]
+}

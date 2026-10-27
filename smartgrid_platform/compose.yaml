@@ -1,0 +1,57 @@
+name: grid-sentinel
+
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: smartgrid
+      POSTGRES_DB: smartgrid
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Create .env with a strong POSTGRES_PASSWORD}
+    volumes:
+      - grid_sentinel_db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U smartgrid -d smartgrid"]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+    networks: [private]
+    restart: unless-stopped
+
+  backend:
+    build: ./backend
+    environment:
+      POSTGRES_HOST: db
+      POSTGRES_USER: smartgrid
+      POSTGRES_DB: smartgrid
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+      MODEL_PATH: /app/model/smartgrid_meter_integrity_model.json
+      CORS_ORIGINS: ""
+      GRID_SENTINEL_AUTH_REQUIRED: "1"
+      GRID_SENTINEL_ACCESS_TOKEN: ${GRID_SENTINEL_ACCESS_TOKEN:?Create .env with a private access token}
+    depends_on:
+      db:
+        condition: service_healthy
+    networks: [private]
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:8080:8080"
+    networks: [private]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    restart: unless-stopped
+
+networks:
+  private:
+    driver: bridge
+
+volumes:
+  grid_sentinel_db:

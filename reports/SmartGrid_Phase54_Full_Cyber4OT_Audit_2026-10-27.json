@@ -1,0 +1,1083 @@
+{
+  "baseline": {
+    "central_switch": {
+      "capture_id": 1,
+      "known_eth_macs": 9
+    },
+    "plc_port": {
+      "capture_id": 69,
+      "known_eth_macs": 5
+    }
+  },
+  "families_at_cutoff_3": [
+    {
+      "attack_captures_flagged": 0,
+      "attack_captures_total": 0,
+      "benign_captures_false_flagged": 0,
+      "benign_captures_total": 2,
+      "family": "benign",
+      "threshold_exclusive": 3,
+      "vantage": "central_switch"
+    },
+    {
+      "attack_captures_flagged": 60,
+      "attack_captures_total": 60,
+      "benign_captures_false_flagged": 0,
+      "benign_captures_total": 0,
+      "family": "host_scan",
+      "threshold_exclusive": 3,
+      "vantage": "central_switch"
+    },
+    {
+      "attack_captures_flagged": 5,
+      "attack_captures_total": 5,
+      "benign_captures_false_flagged": 0,
+      "benign_captures_total": 0,
+      "family": "ping_scan",
+      "threshold_exclusive": 3,
+      "vantage": "central_switch"
+    },
+    {
+      "attack_captures_flagged": 0,
+      "attack_captures_total": 0,
+      "benign_captures_false_flagged": 0,
+      "benign_captures_total": 2,
+      "family": "benign",
+      "threshold_exclusive": 3,
+      "vantage": "plc_port"
+    },
+    {
+      "attack_captures_flagged": 8,
+      "attack_captures_total": 8,
+      "benign_captures_false_flagged": 0,
+      "benign_captures_total": 0,
+      "family": "hijack_macof",
+      "threshold_exclusive": 3,
+      "vantage": "plc_port"
+    },
+    {
+      "attack_captures_flagged": 5,
+      "attack_captures_total": 5,
+      "benign_captures_false_flagged": 0,
+      "benign_captures_total": 0,
+      "family": "ping_scan",
+      "threshold_exclusive": 3,
+      "vantage": "plc_port"
+    },
+    {
+      "attack_captures_flagged": 5,
+      "attack_captures_total": 5,
+      "benign_captures_false_flagged": 0,
+      "benign_captures_total": 0,
+      "family": "plc_scan",
+      "threshold_exclusive": 3,
+      "vantage": "plc_port"
+    }
+  ],
+  "method": "Normal capture 001 for central-switch and 069 for PLC-port; scenarios tested only at matching capture point.",
+  "overall": {
+    "0": {
+      "attack_captures_flagged": 83,
+      "attack_captures_total": 83,
+      "benign_captures_false_flagged": 2,
+      "benign_captures_total": 4,
+      "threshold_exclusive": 0
+    },
+    "10": {
+      "attack_captures_flagged": 83,
+      "attack_captures_total": 83,
+      "benign_captures_false_flagged": 0,
+      "benign_captures_total": 4,
+      "threshold_exclusive": 10
+    },
+    "100": {
+      "attack_captures_flagged": 71,
+      "attack_captures_total": 83,
+      "benign_captures_false_flagged": 0,
+      "benign_captures_total": 4,
+      "threshold_exclusive": 100
+    },
+    "1000": {
+      "attack_captures_flagged": 57,
+      "attack_captures_total": 83,
+      "benign_captures_false_flagged": 0,
+      "benign_captures_total": 4,
+      "threshold_exclusive": 1000
+    },
+    "3": {
+      "attack_captures_flagged": 83,
+      "attack_captures_total": 83,
+      "benign_captures_false_flagged": 0,
+      "benign_captures_total": 4,
+      "threshold_exclusive": 3
+    },
+    "500": {
+      "attack_captures_flagged": 60,
+      "attack_captures_total": 83,
+      "benign_captures_false_flagged": 0,
+      "benign_captures_total": 4,
+      "threshold_exclusive": 500
+    }
+  },
+  "rows": [
+    {
+      "capture_id": 2,
+      "family": "benign",
+      "frames": 84477,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7210,
+      "new_eth_mac_packets": 2,
+      "new_modbus_client_packets": 0,
+      "truth": "normal_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 3,
+      "family": "benign",
+      "frames": 126492,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 10806,
+      "new_eth_mac_packets": 3,
+      "new_modbus_client_packets": 0,
+      "truth": "normal_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 4,
+      "family": "ping_scan",
+      "frames": 4266,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 339,
+      "new_eth_mac_packets": 247,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 5,
+      "family": "ping_scan",
+      "frames": 6725,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 549,
+      "new_eth_mac_packets": 250,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 6,
+      "family": "ping_scan",
+      "frames": 6509,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 531,
+      "new_eth_mac_packets": 247,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 7,
+      "family": "ping_scan",
+      "frames": 19390,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 1629,
+      "new_eth_mac_packets": 265,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 8,
+      "family": "ping_scan",
+      "frames": 84150,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7180,
+      "new_eth_mac_packets": 57,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 9,
+      "family": "host_scan",
+      "frames": 24049,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 338,
+      "new_eth_mac_packets": 20039,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 10,
+      "family": "host_scan",
+      "frames": 25337,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 443,
+      "new_eth_mac_packets": 20053,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 11,
+      "family": "host_scan",
+      "frames": 25840,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 491,
+      "new_eth_mac_packets": 20063,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 12,
+      "family": "host_scan",
+      "frames": 85923,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7179,
+      "new_eth_mac_packets": 1639,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 13,
+      "family": "host_scan",
+      "frames": 84330,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7197,
+      "new_eth_mac_packets": 60,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 14,
+      "family": "host_scan",
+      "frames": 28842,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 749,
+      "new_eth_mac_packets": 20066,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 15,
+      "family": "host_scan",
+      "frames": 42122,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 1868,
+      "new_eth_mac_packets": 20092,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 16,
+      "family": "host_scan",
+      "frames": 46601,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 2267,
+      "new_eth_mac_packets": 20049,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 17,
+      "family": "host_scan",
+      "frames": 85979,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7217,
+      "new_eth_mac_packets": 1514,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 18,
+      "family": "host_scan",
+      "frames": 84571,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7215,
+      "new_eth_mac_packets": 92,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 19,
+      "family": "host_scan",
+      "frames": 35906,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 1149,
+      "new_eth_mac_packets": 14709,
+      "new_modbus_client_packets": 3,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 20,
+      "family": "host_scan",
+      "frames": 44253,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 1433,
+      "new_eth_mac_packets": 17550,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 21,
+      "family": "host_scan",
+      "frames": 38123,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 1459,
+      "new_eth_mac_packets": 11556,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 22,
+      "family": "host_scan",
+      "frames": 87556,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7206,
+      "new_eth_mac_packets": 1509,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 23,
+      "family": "host_scan",
+      "frames": 84632,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7206,
+      "new_eth_mac_packets": 63,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 24,
+      "family": "host_scan",
+      "frames": 22639,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 260,
+      "new_eth_mac_packets": 20105,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 25,
+      "family": "host_scan",
+      "frames": 22383,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 231,
+      "new_eth_mac_packets": 20098,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 26,
+      "family": "host_scan",
+      "frames": 22390,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 236,
+      "new_eth_mac_packets": 20065,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 27,
+      "family": "host_scan",
+      "frames": 87093,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7183,
+      "new_eth_mac_packets": 2996,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 28,
+      "family": "host_scan",
+      "frames": 84213,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7028,
+      "new_eth_mac_packets": 142,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 29,
+      "family": "host_scan",
+      "frames": 23098,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 264,
+      "new_eth_mac_packets": 10097,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 30,
+      "family": "host_scan",
+      "frames": 23235,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 272,
+      "new_eth_mac_packets": 10126,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 31,
+      "family": "host_scan",
+      "frames": 23117,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 255,
+      "new_eth_mac_packets": 10091,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 32,
+      "family": "host_scan",
+      "frames": 87250,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7186,
+      "new_eth_mac_packets": 1496,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 33,
+      "family": "host_scan",
+      "frames": 84349,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7193,
+      "new_eth_mac_packets": 60,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 34,
+      "family": "host_scan",
+      "frames": 24315,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 312,
+      "new_eth_mac_packets": 10676,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 35,
+      "family": "host_scan",
+      "frames": 24519,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 334,
+      "new_eth_mac_packets": 10646,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 36,
+      "family": "host_scan",
+      "frames": 23851,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 295,
+      "new_eth_mac_packets": 10362,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 37,
+      "family": "host_scan",
+      "frames": 87258,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7193,
+      "new_eth_mac_packets": 1494,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 38,
+      "family": "host_scan",
+      "frames": 84531,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7205,
+      "new_eth_mac_packets": 69,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 39,
+      "family": "host_scan",
+      "frames": 47940,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 2378,
+      "new_eth_mac_packets": 20058,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 40,
+      "family": "host_scan",
+      "frames": 32811,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 1081,
+      "new_eth_mac_packets": 20073,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 41,
+      "family": "host_scan",
+      "frames": 40053,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 1697,
+      "new_eth_mac_packets": 20057,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 42,
+      "family": "host_scan",
+      "frames": 85663,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7188,
+      "new_eth_mac_packets": 1510,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 43,
+      "family": "host_scan",
+      "frames": 84172,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7186,
+      "new_eth_mac_packets": 76,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 44,
+      "family": "host_scan",
+      "frames": 30277,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 872,
+      "new_eth_mac_packets": 20041,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 45,
+      "family": "host_scan",
+      "frames": 34870,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 1260,
+      "new_eth_mac_packets": 20060,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 46,
+      "family": "host_scan",
+      "frames": 48783,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 2441,
+      "new_eth_mac_packets": 20042,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 47,
+      "family": "host_scan",
+      "frames": 85720,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7193,
+      "new_eth_mac_packets": 1492,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 48,
+      "family": "host_scan",
+      "frames": 84567,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7200,
+      "new_eth_mac_packets": 58,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 49,
+      "family": "host_scan",
+      "frames": 22993,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 266,
+      "new_eth_mac_packets": 20183,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 50,
+      "family": "host_scan",
+      "frames": 23230,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 299,
+      "new_eth_mac_packets": 20141,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 51,
+      "family": "host_scan",
+      "frames": 22824,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 266,
+      "new_eth_mac_packets": 20084,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 52,
+      "family": "host_scan",
+      "frames": 87316,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7204,
+      "new_eth_mac_packets": 2980,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 53,
+      "family": "host_scan",
+      "frames": 84577,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7200,
+      "new_eth_mac_packets": 111,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 54,
+      "family": "host_scan",
+      "frames": 25761,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 249,
+      "new_eth_mac_packets": 12701,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 55,
+      "family": "host_scan",
+      "frames": 22745,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 230,
+      "new_eth_mac_packets": 10194,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 56,
+      "family": "host_scan",
+      "frames": 25841,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 482,
+      "new_eth_mac_packets": 10298,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 57,
+      "family": "host_scan",
+      "frames": 87300,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7200,
+      "new_eth_mac_packets": 1506,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 58,
+      "family": "host_scan",
+      "frames": 84194,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7174,
+      "new_eth_mac_packets": 68,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 59,
+      "family": "host_scan",
+      "frames": 30223,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 863,
+      "new_eth_mac_packets": 20050,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 60,
+      "family": "host_scan",
+      "frames": 28436,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 711,
+      "new_eth_mac_packets": 20067,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 61,
+      "family": "host_scan",
+      "frames": 40977,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 1774,
+      "new_eth_mac_packets": 20069,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 62,
+      "family": "host_scan",
+      "frames": 110363,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 9262,
+      "new_eth_mac_packets": 1933,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 63,
+      "family": "host_scan",
+      "frames": 84521,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7212,
+      "new_eth_mac_packets": 56,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 64,
+      "family": "host_scan",
+      "frames": 30294,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 601,
+      "new_eth_mac_packets": 22103,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 65,
+      "family": "host_scan",
+      "frames": 30114,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 856,
+      "new_eth_mac_packets": 20168,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 66,
+      "family": "host_scan",
+      "frames": 29877,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 832,
+      "new_eth_mac_packets": 20168,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 67,
+      "family": "host_scan",
+      "frames": 87305,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7189,
+      "new_eth_mac_packets": 3328,
+      "new_modbus_client_packets": 1,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 68,
+      "family": "host_scan",
+      "frames": 84614,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7202,
+      "new_eth_mac_packets": 451,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 70,
+      "family": "benign",
+      "frames": 8116,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7198,
+      "new_eth_mac_packets": 0,
+      "new_modbus_client_packets": 0,
+      "truth": "normal_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 71,
+      "family": "benign",
+      "frames": 12147,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 10773,
+      "new_eth_mac_packets": 0,
+      "new_modbus_client_packets": 0,
+      "truth": "normal_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 72,
+      "family": "ping_scan",
+      "frames": 659,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 382,
+      "new_eth_mac_packets": 245,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 73,
+      "family": "ping_scan",
+      "frames": 692,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 385,
+      "new_eth_mac_packets": 245,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 74,
+      "family": "ping_scan",
+      "frames": 639,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 372,
+      "new_eth_mac_packets": 245,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 75,
+      "family": "ping_scan",
+      "frames": 1863,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 1494,
+      "new_eth_mac_packets": 256,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 76,
+      "family": "ping_scan",
+      "frames": 7768,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 7191,
+      "new_eth_mac_packets": 47,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 77,
+      "family": "plc_scan",
+      "frames": 20846,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 247,
+      "new_eth_mac_packets": 10580,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 78,
+      "family": "plc_scan",
+      "frames": 20931,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 264,
+      "new_eth_mac_packets": 10638,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 79,
+      "family": "plc_scan",
+      "frames": 20795,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 373,
+      "new_eth_mac_packets": 10386,
+      "new_modbus_client_packets": 2,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 80,
+      "family": "plc_scan",
+      "frames": 9149,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 5666,
+      "new_eth_mac_packets": 1483,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 81,
+      "family": "plc_scan",
+      "frames": 6286,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 5655,
+      "new_eth_mac_packets": 55,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 82,
+      "family": "hijack_macof",
+      "frames": 27368,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 86,
+      "new_eth_mac_packets": 1349,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 84,
+      "family": "hijack_macof",
+      "frames": 13759,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 128,
+      "new_eth_mac_packets": 989,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 86,
+      "family": "hijack_macof",
+      "frames": 14023,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 94,
+      "new_eth_mac_packets": 827,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 88,
+      "family": "hijack_macof",
+      "frames": 13131,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 118,
+      "new_eth_mac_packets": 763,
+      "new_modbus_client_packets": 0,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 90,
+      "family": "hijack_macof",
+      "frames": 25405,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 1057,
+      "new_eth_mac_packets": 3360,
+      "new_modbus_client_packets": 479,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 92,
+      "family": "hijack_macof",
+      "frames": 22041,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 919,
+      "new_eth_mac_packets": 2817,
+      "new_modbus_client_packets": 366,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 94,
+      "family": "hijack_macof",
+      "frames": 11509,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 11232,
+      "new_eth_mac_packets": 5627,
+      "new_modbus_client_packets": 5627,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 95,
+      "family": "hijack_macof",
+      "frames": 71574,
+      "ip_mac_conflict_packets": 0,
+      "modbus_packets": 16339,
+      "new_eth_mac_packets": 9513,
+      "new_modbus_client_packets": 2711,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    }
+  ],
+  "source": "Cyber4OT; Zenodo 15005190; archive MD5 55510cbb43d8af72a69dfbcd6940daa5",
+  "warning": "RETROSPECTIVE: the MAC lane and >3 cutoff were selected after exploring this corpus. Attack labels are file-level scenarios; neither packet labels, independence between scans, nor field-site validity is shown."
+}
