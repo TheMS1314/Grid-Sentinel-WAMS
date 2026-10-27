@@ -45,7 +45,7 @@ jobs:
         working-directory: .
         run: |
           python -m pip install dpkt==1.9.8
-          python -m unittest -q test_zenodo_power_twin_frozen_tcp test_kios_goose_scope_audit
+          python -m unittest -q test_zenodo_power_twin_frozen_tcp test_kios_goose_scope_audit test_external_capture_acceptance
 
   react-production:
     name: React production build
