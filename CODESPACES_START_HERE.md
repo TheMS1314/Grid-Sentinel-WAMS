@@ -53,3 +53,14 @@ python scripts/deployment_acceptance.py --live
 ```
 
 GitHub references: [Codespaces private forwarded ports](https://docs.github.com/en/codespaces/reference/security-in-github-codespaces), [Codespaces forwarding controls](https://docs.github.com/en/codespaces/developing-in-a-codespace/forwarding-ports-in-your-codespace), [development-container Docker-in-Docker feature](https://github.com/devcontainers/features/tree/main/src/docker-in-docker).
+
+## Saved-analysis durability verification (Phase 65)
+
+Once the Analysis lab has created at least one recorded run, use these commands from `smartgrid_platform/`:
+
+```bash
+python scripts/persistence_acceptance.py
+python scripts/persistence_acceptance.py --execute
+```
+
+The first command only reads the authenticated local API and fingerprints the latest saved run and aggregate totals. The explicit `--execute` command **temporarily restarts PostgreSQL** (`docker compose restart db`), waits up to 120 seconds for the authenticated API to recover, and verifies the same saved run and aggregate counts remain. It does not delete data, modify saved analyses, or recreate the Compose volume. The dashboard may be temporarily unavailable during the restart. It is a single-container recovery check, not a full host-disaster or Codespaces deletion test. Keep the Codespaces port private.
