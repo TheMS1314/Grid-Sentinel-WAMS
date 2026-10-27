@@ -1,0 +1,38 @@
+{
+  "status": "SYNTHETIC_IDENTIFIABILITY_COUNTEREXAMPLE",
+  "sample_seconds": 1200,
+  "change_window_seconds": 60,
+  "events_every_seconds": 5,
+  "records": [
+    {
+      "hold_seconds": 0,
+      "observed_mismatched_claims": 11,
+      "synthetic_maintenance_false_alert_seconds": 11,
+      "synthetic_spoof_attack_detected_seconds": 11,
+      "synthetic_attack_labeled_seconds": 60,
+      "identical_arp_observations": true,
+      "policy_status": "DO_NOT_DEPLOY_OR_FIT_FROM_SYNTHETIC"
+    },
+    {
+      "hold_seconds": 2,
+      "observed_mismatched_claims": 11,
+      "synthetic_maintenance_false_alert_seconds": 33,
+      "synthetic_spoof_attack_detected_seconds": 33,
+      "synthetic_attack_labeled_seconds": 60,
+      "identical_arp_observations": true,
+      "policy_status": "DO_NOT_DEPLOY_OR_FIT_FROM_SYNTHETIC"
+    },
+    {
+      "hold_seconds": 5,
+      "observed_mismatched_claims": 11,
+      "synthetic_maintenance_false_alert_seconds": 56,
+      "synthetic_spoof_attack_detected_seconds": 55,
+      "synthetic_attack_labeled_seconds": 60,
+      "identical_arp_observations": true,
+      "policy_status": "DO_NOT_DEPLOY_OR_FIT_FROM_SYNTHETIC"
+    }
+  ],
+  "conclusion": "Observed ARP sender IP/MAC claims alone cannot distinguish a legitimate network interface change from impersonation when packet observations are identical.",
+  "requirement": "Independent, authenticated inventory-change provenance and operator review are required; never auto-learn changed MACs from ARP claims.",
+  "warning": "Synthetic thought experiment. Numbers are not field F1, dataset results, or estimates of real-world attack/maintenance frequency."
+}

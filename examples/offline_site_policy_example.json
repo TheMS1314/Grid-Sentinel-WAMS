@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "mode": "research_only",
+  "site_id": "synthetic-lab-example",
+  "inventory_provenance_reference": "DEMO-ONLY-replace-with-independently-verified-site-change-record",
+  "allowed_modbus_sources": ["192.0.2.10"],
+  "expected_arp_mappings": {"192.0.2.50": "02:00:00:00:00:01"},
+  "frozen_price_rule": {"center": 0.0, "scale": 1.0, "threshold": 3.0},
+  "hold_seconds": {"modbus": 5, "arp": 2}
+}

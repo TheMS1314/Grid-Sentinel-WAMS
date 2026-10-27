@@ -1,0 +1,708 @@
+{
+  "alpha": 0.05,
+  "calibration": {
+    "central_switch": {
+      "capture_id": 2,
+      "frames": 84477,
+      "unknown_source_mac_packets": 2,
+      "upper_rate_per_100000_packets": 7.452671877400937
+    },
+    "plc_port": {
+      "capture_id": 70,
+      "frames": 8116,
+      "unknown_source_mac_packets": 0,
+      "upper_rate_per_100000_packets": 36.911437574593286
+    }
+  },
+  "method": "At each viewpoint, freeze MAC inventory on baseline 001/069; calibrate a one-sided 95% Poisson upper anomaly rate on benign 002/070 only; test later benign 003/071 and publisher scenario attacks.",
+  "predictions": [
+    {
+      "capture_id": 3,
+      "decision": "normal",
+      "family": "benign",
+      "rate_per_100000_packets": 2.3716914903709325,
+      "truth": "normal_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 4,
+      "decision": "attack",
+      "family": "ping_scan",
+      "rate_per_100000_packets": 5789.967182372246,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 5,
+      "decision": "attack",
+      "family": "ping_scan",
+      "rate_per_100000_packets": 3717.472118959108,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 6,
+      "decision": "attack",
+      "family": "ping_scan",
+      "rate_per_100000_packets": 3794.7457366722997,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 7,
+      "decision": "attack",
+      "family": "ping_scan",
+      "rate_per_100000_packets": 1366.683857658587,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 8,
+      "decision": "attack",
+      "family": "ping_scan",
+      "rate_per_100000_packets": 67.7361853832442,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 9,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 83325.71000873217,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 10,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 79145.12373209141,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 11,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 77643.18885448917,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 12,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 1907.5218509595802,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 13,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 71.14905727499111,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 14,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 69572.15172318148,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 15,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 47699.539433075355,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 16,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 43022.68191669707,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 17,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 1760.8951022924202,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 18,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 108.78433505575197,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 19,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 40965.29827883919,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 20,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 39658.328248932274,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 21,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 30312.40983133541,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 22,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 1723.4684087898029,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 23,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 74.4399281595614,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 24,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 88806.9261009762,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 25,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 89791.35951391682,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 26,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 89615.89995533721,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 27,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 3440.0009185583226,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 28,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 168.62004678612567,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 29,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 43713.74144947615,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 30,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 43580.80482031418,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 31,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 43651.85794004412,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 32,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 1714.6131805157593,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 33,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 71.1330306227697,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 34,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 43907.05325930496,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 35,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 43419.38904523023,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 36,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 43444.719298981174,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 37,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 1712.163927662793,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 38,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 81.62685878553431,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 39,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 41839.7997496871,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 40,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 61177.65383560392,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 41,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 50076.149102439274,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 42,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 1762.7213616146994,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 43,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 90.29130827353514,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 44,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 66192.15906463652,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 45,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 57527.960997992544,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 46,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 41083.984174815,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 47,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 1740.550629958003,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 48,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 68.58467250818877,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 49,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 87778.88922715609,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 50,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 86702.53981919932,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 51,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 87995.09288468279,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 52,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 3412.8911081588712,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 53,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 131.24135403242016,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 54,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 49303.21027910407,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 55,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 44818.64145966146,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 56,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 39851.39893966952,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 57,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 1725.085910652921,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 58,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 80.765850298121,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 59,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 66340.20448003177,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 60,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 70568.99704599802,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 61,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 48976.25497230153,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 62,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 1751.4928010293304,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 63,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 66.25572342968019,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 64,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 72961.6425694857,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 65,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 66972.17241150295,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 66,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 67503.4307326706,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 67,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 3811.923715709295,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 68,
+      "decision": "attack",
+      "family": "host_scan",
+      "rate_per_100000_packets": 533.0087219609048,
+      "truth": "attack_scenario",
+      "vantage": "central_switch"
+    },
+    {
+      "capture_id": 71,
+      "decision": "normal",
+      "family": "benign",
+      "rate_per_100000_packets": 0.0,
+      "truth": "normal_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 72,
+      "decision": "attack",
+      "family": "ping_scan",
+      "rate_per_100000_packets": 37177.541729893775,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 73,
+      "decision": "attack",
+      "family": "ping_scan",
+      "rate_per_100000_packets": 35404.62427745665,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 74,
+      "decision": "attack",
+      "family": "ping_scan",
+      "rate_per_100000_packets": 38341.15805946792,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 75,
+      "decision": "attack",
+      "family": "ping_scan",
+      "rate_per_100000_packets": 13741.27750939345,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 76,
+      "decision": "attack",
+      "family": "ping_scan",
+      "rate_per_100000_packets": 605.0463439752832,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 77,
+      "decision": "attack",
+      "family": "plc_scan",
+      "rate_per_100000_packets": 50753.142089609515,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 78,
+      "decision": "attack",
+      "family": "plc_scan",
+      "rate_per_100000_packets": 50824.136448330224,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 79,
+      "decision": "attack",
+      "family": "plc_scan",
+      "rate_per_100000_packets": 49944.69824477038,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 80,
+      "decision": "attack",
+      "family": "plc_scan",
+      "rate_per_100000_packets": 16209.421794731665,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 81,
+      "decision": "attack",
+      "family": "plc_scan",
+      "rate_per_100000_packets": 874.9602290804963,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 82,
+      "decision": "attack",
+      "family": "hijack_macof",
+      "rate_per_100000_packets": 4929.114294066063,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 84,
+      "decision": "attack",
+      "family": "hijack_macof",
+      "rate_per_100000_packets": 7188.022385347773,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 86,
+      "decision": "attack",
+      "family": "hijack_macof",
+      "rate_per_100000_packets": 5897.4541824146045,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 88,
+      "decision": "attack",
+      "family": "hijack_macof",
+      "rate_per_100000_packets": 5810.677023836723,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 90,
+      "decision": "attack",
+      "family": "hijack_macof",
+      "rate_per_100000_packets": 13225.742963983466,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 92,
+      "decision": "attack",
+      "family": "hijack_macof",
+      "rate_per_100000_packets": 12780.72682727644,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 94,
+      "decision": "attack",
+      "family": "hijack_macof",
+      "rate_per_100000_packets": 48892.171344165436,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    },
+    {
+      "capture_id": 95,
+      "decision": "attack",
+      "family": "hijack_macof",
+      "rate_per_100000_packets": 13291.139240506327,
+      "truth": "attack_scenario",
+      "vantage": "plc_port"
+    }
+  ],
+  "results": {
+    "attack_scenarios_flagged": 83,
+    "attack_scenarios_total": 83,
+    "heldout_benign_false_flagged": 0,
+    "heldout_benign_total": 2
+  },
+  "source_phase54_json_sha256": "aabd62f5532bca767b9828266736369c1acfda360aeac2235f007235bf5f6d72",
+  "warning": "Feature/corpus chosen post-hoc. Packet independence for Poisson is implausible. Two benign calibration recordings, two later benign tests and correlated attacks are far too few for field false-alert estimates."
+}

@@ -1,0 +1,151 @@
+{
+  "baselines": {
+    "central_switch": {
+      "known_ethernet_mac_count": 9,
+      "modbus_clients": [
+        "192.168.127.20",
+        "192.168.127.6"
+      ],
+      "normal_source_capture": 1
+    },
+    "plc_port": {
+      "known_ethernet_mac_count": 5,
+      "modbus_clients": [
+        "192.168.127.20",
+        "192.168.127.6"
+      ],
+      "normal_source_capture": 69
+    }
+  },
+  "comparisons": [
+    {
+      "capture_id": 70,
+      "flag_any_new_mac": false,
+      "flag_modbus_novelty": false,
+      "new_eth_mac_packets": 0,
+      "new_modbus_client_packets": 0,
+      "testing_vantage": "plc_port",
+      "training_vantage": "plc_port",
+      "vantage_bound_decision": "normal"
+    },
+    {
+      "capture_id": 71,
+      "flag_any_new_mac": false,
+      "flag_modbus_novelty": false,
+      "new_eth_mac_packets": 0,
+      "new_modbus_client_packets": 0,
+      "testing_vantage": "plc_port",
+      "training_vantage": "plc_port",
+      "vantage_bound_decision": "normal"
+    },
+    {
+      "capture_id": 2,
+      "flag_any_new_mac": true,
+      "flag_modbus_novelty": false,
+      "new_eth_mac_packets": 76025,
+      "new_modbus_client_packets": 0,
+      "testing_vantage": "central_switch",
+      "training_vantage": "plc_port",
+      "vantage_bound_decision": "abstain"
+    },
+    {
+      "capture_id": 3,
+      "flag_any_new_mac": true,
+      "flag_modbus_novelty": false,
+      "new_eth_mac_packets": 113940,
+      "new_modbus_client_packets": 0,
+      "testing_vantage": "central_switch",
+      "training_vantage": "plc_port",
+      "vantage_bound_decision": "abstain"
+    },
+    {
+      "capture_id": 70,
+      "flag_any_new_mac": false,
+      "flag_modbus_novelty": false,
+      "new_eth_mac_packets": 0,
+      "new_modbus_client_packets": 0,
+      "testing_vantage": "plc_port",
+      "training_vantage": "central_switch",
+      "vantage_bound_decision": "abstain"
+    },
+    {
+      "capture_id": 71,
+      "flag_any_new_mac": false,
+      "flag_modbus_novelty": false,
+      "new_eth_mac_packets": 0,
+      "new_modbus_client_packets": 0,
+      "testing_vantage": "plc_port",
+      "training_vantage": "central_switch",
+      "vantage_bound_decision": "abstain"
+    },
+    {
+      "capture_id": 2,
+      "flag_any_new_mac": true,
+      "flag_modbus_novelty": false,
+      "new_eth_mac_packets": 2,
+      "new_modbus_client_packets": 0,
+      "testing_vantage": "central_switch",
+      "training_vantage": "central_switch",
+      "vantage_bound_decision": "attack"
+    },
+    {
+      "capture_id": 3,
+      "flag_any_new_mac": true,
+      "flag_modbus_novelty": false,
+      "new_eth_mac_packets": 3,
+      "new_modbus_client_packets": 0,
+      "testing_vantage": "central_switch",
+      "training_vantage": "central_switch",
+      "vantage_bound_decision": "attack"
+    }
+  ],
+  "source": "Zenodo 15005190; publisher MD5 verified",
+  "threshold_sensitivity": [
+    {
+      "attack_containing_plc_captures_flagged": 8,
+      "attack_containing_plc_captures_total": 8,
+      "benign_other_vantage_captures_flagged": 2,
+      "benign_other_vantage_captures_total": 2,
+      "benign_same_vantage_captures_flagged": 0,
+      "benign_same_vantage_captures_total": 2,
+      "min_unknown_mac_packets_exclusive": 0
+    },
+    {
+      "attack_containing_plc_captures_flagged": 8,
+      "attack_containing_plc_captures_total": 8,
+      "benign_other_vantage_captures_flagged": 2,
+      "benign_other_vantage_captures_total": 2,
+      "benign_same_vantage_captures_flagged": 0,
+      "benign_same_vantage_captures_total": 2,
+      "min_unknown_mac_packets_exclusive": 10
+    },
+    {
+      "attack_containing_plc_captures_flagged": 8,
+      "attack_containing_plc_captures_total": 8,
+      "benign_other_vantage_captures_flagged": 2,
+      "benign_other_vantage_captures_total": 2,
+      "benign_same_vantage_captures_flagged": 0,
+      "benign_same_vantage_captures_total": 2,
+      "min_unknown_mac_packets_exclusive": 100
+    },
+    {
+      "attack_containing_plc_captures_flagged": 8,
+      "attack_containing_plc_captures_total": 8,
+      "benign_other_vantage_captures_flagged": 2,
+      "benign_other_vantage_captures_total": 2,
+      "benign_same_vantage_captures_flagged": 0,
+      "benign_same_vantage_captures_total": 2,
+      "min_unknown_mac_packets_exclusive": 500
+    },
+    {
+      "attack_containing_plc_captures_flagged": 5,
+      "attack_containing_plc_captures_total": 8,
+      "benign_other_vantage_captures_flagged": 2,
+      "benign_other_vantage_captures_total": 2,
+      "benign_same_vantage_captures_flagged": 0,
+      "benign_same_vantage_captures_total": 2,
+      "min_unknown_mac_packets_exclusive": 1000
+    }
+  ],
+  "warning": "Every threshold comparison is retrospective; benign capture labels are scenario-level, not independent site approvals."
+}

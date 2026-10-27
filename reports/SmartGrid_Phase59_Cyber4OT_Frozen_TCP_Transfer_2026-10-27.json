@@ -1,0 +1,921 @@
+{
+  "captures": [
+    {
+      "capture_id": 2,
+      "family": "benign",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 0,
+      "scenario_truth": "normal",
+      "syn_probe_packets": 0,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 3,
+      "family": "benign",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 0,
+      "scenario_truth": "normal",
+      "syn_probe_packets": 0,
+      "vantage": "central_switch",
+      "windows": 16
+    },
+    {
+      "capture_id": 4,
+      "family": "ping_scan",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 0,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 0,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 5,
+      "family": "ping_scan",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 0,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 0,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 6,
+      "family": "ping_scan",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 0,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 0,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 7,
+      "family": "ping_scan",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 0,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 0,
+      "vantage": "central_switch",
+      "windows": 3
+    },
+    {
+      "capture_id": 8,
+      "family": "ping_scan",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 0,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 0,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 9,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10009,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 19998,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 10,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10015,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 20004,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 11,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10017,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 20006,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 12,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 88,
+      "review_windows": 11,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 1461,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 13,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10,
+      "review_windows": 11,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 36,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 14,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10012,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 20009,
+      "vantage": "central_switch",
+      "windows": 2
+    },
+    {
+      "capture_id": 15,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 4783,
+      "review_windows": 3,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 20005,
+      "vantage": "central_switch",
+      "windows": 3
+    },
+    {
+      "capture_id": 16,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 3005,
+      "review_windows": 4,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 20002,
+      "vantage": "central_switch",
+      "windows": 4
+    },
+    {
+      "capture_id": 17,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 81,
+      "review_windows": 11,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 1466,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 18,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 8,
+      "review_windows": 11,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 38,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 19,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 5797,
+      "review_windows": 2,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 14701,
+      "vantage": "central_switch",
+      "windows": 2
+    },
+    {
+      "capture_id": 20,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 5645,
+      "review_windows": 2,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 17540,
+      "vantage": "central_switch",
+      "windows": 2
+    },
+    {
+      "capture_id": 21,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 5722,
+      "review_windows": 2,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 11541,
+      "vantage": "central_switch",
+      "windows": 3
+    },
+    {
+      "capture_id": 22,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 156,
+      "review_windows": 11,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 1470,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 23,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 11,
+      "review_windows": 10,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 38,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 24,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10004,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10088,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 25,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10003,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10086,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 26,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10003,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10037,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 27,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 156,
+      "review_windows": 11,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 1464,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 28,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 11,
+      "review_windows": 10,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 38,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 29,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10004,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10052,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 30,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10003,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10083,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 31,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10003,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10055,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 32,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 156,
+      "review_windows": 11,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 1465,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 33,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 11,
+      "review_windows": 10,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 38,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 34,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10004,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10609,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 35,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10006,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10592,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 36,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10004,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10318,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 37,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 156,
+      "review_windows": 11,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 1467,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 38,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 11,
+      "review_windows": 10,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 37,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 39,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 9940,
+      "review_windows": 2,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 20007,
+      "vantage": "central_switch",
+      "windows": 4
+    },
+    {
+      "capture_id": 40,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 7805,
+      "review_windows": 2,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 20011,
+      "vantage": "central_switch",
+      "windows": 2
+    },
+    {
+      "capture_id": 41,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 4802,
+      "review_windows": 3,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 20007,
+      "vantage": "central_switch",
+      "windows": 3
+    },
+    {
+      "capture_id": 42,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 81,
+      "review_windows": 11,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 1463,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 43,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 8,
+      "review_windows": 11,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 38,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 44,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 5609,
+      "review_windows": 2,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 20004,
+      "vantage": "central_switch",
+      "windows": 2
+    },
+    {
+      "capture_id": 45,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 7795,
+      "review_windows": 2,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 20010,
+      "vantage": "central_switch",
+      "windows": 2
+    },
+    {
+      "capture_id": 46,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 3003,
+      "review_windows": 4,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 20001,
+      "vantage": "central_switch",
+      "windows": 4
+    },
+    {
+      "capture_id": 47,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 81,
+      "review_windows": 11,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 1462,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 48,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 8,
+      "review_windows": 10,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 37,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 49,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10004,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10137,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 50,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10004,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10129,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 51,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10003,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10073,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 52,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 156,
+      "review_windows": 11,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 1469,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 53,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 11,
+      "review_windows": 10,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 38,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 54,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10004,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 12250,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 55,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10002,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10000,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 56,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10002,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10000,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 57,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 156,
+      "review_windows": 11,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 1468,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 58,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 11,
+      "review_windows": 10,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 38,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 59,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 5537,
+      "review_windows": 2,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 20004,
+      "vantage": "central_switch",
+      "windows": 2
+    },
+    {
+      "capture_id": 60,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10017,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 20014,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 61,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 4793,
+      "review_windows": 3,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 20007,
+      "vantage": "central_switch",
+      "windows": 3
+    },
+    {
+      "capture_id": 62,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 81,
+      "review_windows": 13,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 1899,
+      "vantage": "central_switch",
+      "windows": 13
+    },
+    {
+      "capture_id": 63,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 8,
+      "review_windows": 11,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 38,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 64,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 10004,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 12034,
+      "vantage": "central_switch",
+      "windows": 1
+    },
+    {
+      "capture_id": 65,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 8270,
+      "review_windows": 2,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10120,
+      "vantage": "central_switch",
+      "windows": 2
+    },
+    {
+      "capture_id": 66,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 8401,
+      "review_windows": 2,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10120,
+      "vantage": "central_switch",
+      "windows": 2
+    },
+    {
+      "capture_id": 67,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 156,
+      "review_windows": 11,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 1465,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 68,
+      "family": "host_scan",
+      "max_unique_ports_per_minute": 11,
+      "review_windows": 10,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 37,
+      "vantage": "central_switch",
+      "windows": 11
+    },
+    {
+      "capture_id": 70,
+      "family": "benign",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 0,
+      "scenario_truth": "normal",
+      "syn_probe_packets": 0,
+      "vantage": "plc_port",
+      "windows": 11
+    },
+    {
+      "capture_id": 71,
+      "family": "benign",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 0,
+      "scenario_truth": "normal",
+      "syn_probe_packets": 0,
+      "vantage": "plc_port",
+      "windows": 16
+    },
+    {
+      "capture_id": 72,
+      "family": "ping_scan",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 0,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 0,
+      "vantage": "plc_port",
+      "windows": 1
+    },
+    {
+      "capture_id": 73,
+      "family": "ping_scan",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 0,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 0,
+      "vantage": "plc_port",
+      "windows": 1
+    },
+    {
+      "capture_id": 74,
+      "family": "ping_scan",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 0,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 0,
+      "vantage": "plc_port",
+      "windows": 1
+    },
+    {
+      "capture_id": 75,
+      "family": "ping_scan",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 0,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 0,
+      "vantage": "plc_port",
+      "windows": 3
+    },
+    {
+      "capture_id": 76,
+      "family": "ping_scan",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 0,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 0,
+      "vantage": "plc_port",
+      "windows": 11
+    },
+    {
+      "capture_id": 77,
+      "family": "plc_scan",
+      "max_unique_ports_per_minute": 10005,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10574,
+      "vantage": "plc_port",
+      "windows": 1
+    },
+    {
+      "capture_id": 78,
+      "family": "plc_scan",
+      "max_unique_ports_per_minute": 10005,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10633,
+      "vantage": "plc_port",
+      "windows": 1
+    },
+    {
+      "capture_id": 79,
+      "family": "plc_scan",
+      "max_unique_ports_per_minute": 10006,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10380,
+      "vantage": "plc_port",
+      "windows": 1
+    },
+    {
+      "capture_id": 80,
+      "family": "plc_scan",
+      "max_unique_ports_per_minute": 156,
+      "review_windows": 11,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 1466,
+      "vantage": "plc_port",
+      "windows": 11
+    },
+    {
+      "capture_id": 81,
+      "family": "plc_scan",
+      "max_unique_ports_per_minute": 11,
+      "review_windows": 11,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 38,
+      "vantage": "plc_port",
+      "windows": 11
+    },
+    {
+      "capture_id": 82,
+      "family": "hijack_macof",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 1,
+      "vantage": "plc_port",
+      "windows": 1
+    },
+    {
+      "capture_id": 84,
+      "family": "hijack_macof",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 6,
+      "vantage": "plc_port",
+      "windows": 1
+    },
+    {
+      "capture_id": 86,
+      "family": "hijack_macof",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 6,
+      "vantage": "plc_port",
+      "windows": 1
+    },
+    {
+      "capture_id": 88,
+      "family": "hijack_macof",
+      "max_unique_ports_per_minute": 5,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 6,
+      "vantage": "plc_port",
+      "windows": 1
+    },
+    {
+      "capture_id": 90,
+      "family": "hijack_macof",
+      "max_unique_ports_per_minute": 6,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 7,
+      "vantage": "plc_port",
+      "windows": 1
+    },
+    {
+      "capture_id": 92,
+      "family": "hijack_macof",
+      "max_unique_ports_per_minute": 96,
+      "review_windows": 1,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 97,
+      "vantage": "plc_port",
+      "windows": 1
+    },
+    {
+      "capture_id": 94,
+      "family": "hijack_macof",
+      "max_unique_ports_per_minute": 6,
+      "review_windows": 5,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 10,
+      "vantage": "plc_port",
+      "windows": 6
+    },
+    {
+      "capture_id": 95,
+      "family": "hijack_macof",
+      "max_unique_ports_per_minute": 197,
+      "review_windows": 3,
+      "scenario_truth": "attack",
+      "syn_probe_packets": 201,
+      "vantage": "plc_port",
+      "windows": 18
+    }
+  ],
+  "groups": {
+    "central_switch/benign": {
+      "capture_count": 2,
+      "capture_reviewed": 0,
+      "windows": 27,
+      "windows_reviewed": 0
+    },
+    "central_switch/host_scan": {
+      "capture_count": 60,
+      "capture_reviewed": 60,
+      "windows": 328,
+      "windows_reviewed": 316
+    },
+    "central_switch/ping_scan": {
+      "capture_count": 5,
+      "capture_reviewed": 0,
+      "windows": 17,
+      "windows_reviewed": 0
+    },
+    "plc_port/benign": {
+      "capture_count": 2,
+      "capture_reviewed": 0,
+      "windows": 27,
+      "windows_reviewed": 0
+    },
+    "plc_port/hijack_macof": {
+      "capture_count": 8,
+      "capture_reviewed": 8,
+      "windows": 30,
+      "windows_reviewed": 14
+    },
+    "plc_port/ping_scan": {
+      "capture_count": 5,
+      "capture_reviewed": 0,
+      "windows": 17,
+      "windows_reviewed": 0
+    },
+    "plc_port/plc_scan": {
+      "capture_count": 5,
+      "capture_reviewed": 5,
+      "windows": 25,
+      "windows_reviewed": 25
+    }
+  },
+  "rule": "Zero-SWARM Phase58 >2 distinct TCP destination ports AND SYN-without-ACK present in a 60-second bucket, fixed without refitting",
+  "source": "Cyber4OT publisher MD5 validated; 83 attack-scenario and 4 benign comparable-vantage captures",
+  "warning": "Cross-dataset transfer, but Cyber4OT was previously examined by researchers; labels are scenario-level, no attacker onset truth. Packet and window labels are not independently adjudicated."
+}

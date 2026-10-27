@@ -1,0 +1,36 @@
+{
+  "records": [
+    {
+      "timestamp_utc": "2026-10-26T00:00:00Z",
+      "observable": {"physics": true, "modbus": true, "arp": true, "price": true},
+      "physics_review": false,
+      "modbus_writes": [],
+      "arp_claims": [],
+      "price_eur_per_kwh": 0.0
+    },
+    {
+      "timestamp_utc": "2026-10-26T00:00:01Z",
+      "observable": {"physics": true, "modbus": true, "arp": true, "price": true},
+      "physics_review": false,
+      "modbus_writes": [{"source_ip": "192.0.2.99"}],
+      "arp_claims": [{"sender_ip": "192.0.2.50", "sender_mac": "02:00:00:00:00:02"}],
+      "price_eur_per_kwh": 4.0
+    },
+    {
+      "timestamp_utc": "2026-10-26T00:00:02Z",
+      "observable": {"physics": false, "modbus": true, "arp": true, "price": true},
+      "physics_review": null,
+      "modbus_writes": [],
+      "arp_claims": [],
+      "price_eur_per_kwh": 0.0
+    },
+    {
+      "timestamp_utc": "2026-10-26T00:00:04Z",
+      "observable": {"physics": true, "modbus": true, "arp": true, "price": true},
+      "physics_review": false,
+      "modbus_writes": [],
+      "arp_claims": [],
+      "price_eur_per_kwh": 0.0
+    }
+  ]
+}
