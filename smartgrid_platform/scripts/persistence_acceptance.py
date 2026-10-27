@@ -56,6 +56,9 @@ def snapshot(project=PROJECT, opener=None):
     totals = {key: overview.get(key) for key in keys}
     if not isinstance(totals['analyses'], int) or totals['analyses'] < 1:
         raise RuntimeError('No persisted run count was returned')
+    # Database row ordering is not a persistence guarantee; canonicalize findings.
+    if isinstance(detail.get('findings'), list):
+        detail['findings'] = sorted(detail['findings'], key=lambda row: json.dumps(row, sort_keys=True))
     digest = hashlib.sha256(json.dumps(detail, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
     return {'analysis_id': analysis_id, 'detail_sha256': digest, 'totals': totals}
 
