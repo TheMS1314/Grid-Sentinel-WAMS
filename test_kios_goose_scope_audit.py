@@ -6,7 +6,7 @@ from kios_goose_scope_audit import FILES, count_vlan_goose, evaluate
 
 
 def vlan_goose_packet():
-    return b'\\xff' * 6 + b'\\x00' * 6 + b'\\x81\\x00' + b'\\x00\\x01' + b'\\x88\\xb8' + b'payload'
+    return bytes([255]) * 6 + bytes(6) + bytes.fromhex('8100000188b8') + b'payload'
 
 
 class KiosGooseScopeTests(unittest.TestCase):
@@ -19,7 +19,7 @@ class KiosGooseScopeTests(unittest.TestCase):
         self.assertEqual(count_vlan_goose([(0, vlan_goose_packet())]), 1)
 
     def test_non_goose_frame_not_mistaken_for_goose(self):
-        ethernet = b'\\xff' * 12 + b'\\x08\\x06' + b'payload'
+        ethernet = bytes([255]) * 12 + bytes.fromhex('0806') + b'payload'
         self.assertEqual(count_vlan_goose([(0, ethernet)]), 0)
 
     def test_missing_source_capture_blocks_scoring(self):
