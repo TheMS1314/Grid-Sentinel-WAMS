@@ -27,10 +27,11 @@ class ExternalCaptureAcceptanceTests(unittest.TestCase):
 
     def capture(self, name, packets):
         buffer = io.BytesIO()
-        with dpkt.pcap.Writer(buffer) as writer:
-            for second, port in packets:
-                writer.writepkt(tcp_frame(port), ts=second)
+        writer = dpkt.pcap.Writer(buffer)
+        for second, port in packets:
+            writer.writepkt(tcp_frame(port), ts=second)
         raw = buffer.getvalue()
+        writer.close()
         (self.root / name).write_bytes(raw)
         return {"path": name, "sha256": hashlib.sha256(raw).hexdigest()}
 
