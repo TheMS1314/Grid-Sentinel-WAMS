@@ -39,7 +39,7 @@ jobs:
           PYTHONPATH: backend
         run: python -m pytest -q backend/tests
       - name: Verify backup, private preflight, acceptance and recovery unit tests
-        run: python -m unittest -q tests.test_operations tests.test_deployment_preflight tests.test_deployment_acceptance tests.test_restore_drill tests.test_codespaces_deploy tests.test_persistence_acceptance
+        run: python -m unittest -q tests.test_operations tests.test_deployment_preflight tests.test_deployment_acceptance tests.test_restore_drill tests.test_codespaces_deploy tests.test_persistence_acceptance tests.test_codespace_reopen_acceptance
 
   react-production:
     name: React production build
