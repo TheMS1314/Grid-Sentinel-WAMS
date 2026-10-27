@@ -53,7 +53,7 @@ class PreflightTests(unittest.TestCase):
             self.build_fixture(root)
             (root / '.env').write_text('POSTGRES_PASSWORD=LongSecretForSyntheticTests012345\nGRID_SENTINEL_ACCESS_TOKEN=LongUniqueLocalAccessTokenForSyntheticTests0123456789\n')
             content = (root / 'compose.yaml').read_text()
-            (root / 'compose.yaml').write_text(content.replace('127.0.0.1:8080:80', '0.0.0.0:8080:80'))
+            (root / 'compose.yaml').write_text(content.replace('127.0.0.1:8080:8080', '0.0.0.0:8080:8080'))
             result = inspect_project(root)
             self.assertTrue(any('bind exclusively' in error for error in result['errors']))
             (root / 'compose.yaml').write_text(content.replace('services:\n  db:\n',
