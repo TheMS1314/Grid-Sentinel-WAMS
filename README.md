@@ -160,3 +160,6 @@ No research paper is included.
 
 
 **Final project handoff (Phase 70):** Use `FACULTY_DEMO_6_MINUTES.md` for a reproducible presentation and claim-safe explanation of retrospective vs deployed functionality. Future authorized CIC Modbus/IIoT packet captures can be tested without retuning via `external_capture_acceptance.py`, with schema and limitations in `reports/External_Dataset_Acceptance_Protocol_2026-10-27.md`. Hash mismatches, unsafe inputs, unsupported families, and unverified benign exposure fail closed or explicitly abstain; **no unavailable third-party accuracy is claimed**.
+
+
+**Scientific reviewer audit / publication readiness:** `research_evidence_audit.py` independently recalculates the bundled S1–S6 macro/micro F1 and false-alarm counts, excludes S0 and S1-alt from the primary macro, and fails on internal confusion-matrix drift. The interpretive audit is in `reports/Research_Readiness_Reviewer_Audit_2026-10-27.md`; the weak-case/attack-family scope matrix is `reports/Attack_Family_Scope_and_Weak_Cases_2026-10-27.md`. They explicitly distinguish the strong **post-hoc** four-lane 98.94% row-F1 from the much narrower deployed physics detector, and document unsupported families and source-identity uncertainty. Publication ratings are subjective, not venue acceptance forecasts. No paper written.
