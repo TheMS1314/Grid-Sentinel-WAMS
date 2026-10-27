@@ -38,7 +38,7 @@ def inspect_project(directory):
         else:
             errors.append(label)
 
-    check(frontend.get('ports') == ['127.0.0.1:8080:80'], 'Frontend must bind exclusively to 127.0.0.1:8080:80')
+    check(frontend.get('ports') == ['127.0.0.1:8080:8080'], 'Frontend must bind exclusively to 127.0.0.1:8080:8080')
     check('ports' not in backend and 'ports' not in database, 'Backend and database must not publish host ports')
     check(frontend.get('networks') == ['private'] and backend.get('networks') == ['private'] and database.get('networks') == ['private'],
           'All services must use only the declared private bridge network')
