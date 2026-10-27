@@ -64,3 +64,21 @@ python scripts/persistence_acceptance.py --execute
 ```
 
 The first command only reads the authenticated local API and fingerprints the latest saved run and aggregate totals. The explicit `--execute` command **temporarily restarts PostgreSQL** (`docker compose restart db`), waits up to 120 seconds for the authenticated API to recover, and verifies the same saved run and aggregate counts remain. It does not delete data, modify saved analyses, or recreate the Compose volume. The dashboard may be temporarily unavailable during the restart. It is a single-container recovery check, not a full host-disaster or Codespaces deletion test. Keep the Codespaces port private.
+
+## Full Codespace stop/reopen data acceptance (Phase 67)
+
+After at least one saved analysis, from `smartgrid_platform/`, capture a non-secret local baseline **before** you stop the Codespace:
+
+```bash
+python scripts/codespace_reopen_acceptance.py --prepare
+```
+
+Stop (do not delete) the Codespace using GitHub's normal Codespaces controls. Reopen the **same** Codespace. Once running, from the repository root run:
+
+```bash
+python smartgrid_platform/scripts/codespaces_deploy.py --skip-restore
+cd smartgrid_platform
+python scripts/codespace_reopen_acceptance.py --verify
+```
+
+The baseline is an untracked, non-overwritten JSON file in `smartgrid_platform/backups/` containing only a saved run identifier, normalized record hash and aggregate counts. The comparison reports `CODESPACE_REOPEN_PERSISTENCE_PASS` only when the authenticated API, saved analysis and counts all match. Both check steps are read-only with respect to PostgreSQL. If the baseline is missing (e.g., a Codespace was **deleted** and recreated), the test blocks rather than claims success. This proves persistence across stop/reopen of the **same** Codespace only, not migration to a new host, deletion recovery, field accuracy, or site acceptance. The deployment command may build containers and should run only in your private Codespace.
