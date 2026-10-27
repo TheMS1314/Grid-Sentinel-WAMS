@@ -157,3 +157,6 @@ No research paper is included.
 
 
 **Phase 69 (new independent GOOSE scope control):** Four published University of Cyprus/KIOS S1/S2 GOOSE substation packet captures (two attacks, two matching benign scenarios) passed publisher checksum validation. The frozen TCP scanning rule correctly produced **no TCP scan reviews**, but it does **not detect** either GOOSE FDI or message-suppression attack. These are **explicit out-of-scope abstentions (or misses if claiming all-attack coverage)**, not successful attack detection. VLAN inner EtherType `0x88B8` frames and all source hashes are reported in `reports/SmartGrid_Phase69_KIOS_GOOSE_Out_of_Scope_Control_2026-10-27.md` and reproduced by `kios_goose_scope_audit.py`. These short benign captures do not satisfy a 24-hour false-alarm acceptance requirement.
+
+
+**Final project handoff (Phase 70):** Use `FACULTY_DEMO_6_MINUTES.md` for a reproducible presentation and claim-safe explanation of retrospective vs deployed functionality. Future authorized CIC Modbus/IIoT packet captures can be tested without retuning via `external_capture_acceptance.py`, with schema and limitations in `reports/External_Dataset_Acceptance_Protocol_2026-10-27.md`. Hash mismatches, unsafe inputs, unsupported families, and unverified benign exposure fail closed or explicitly abstain; **no unavailable third-party accuracy is claimed**.
